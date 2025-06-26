@@ -1,0 +1,923 @@
+[2025-06-26T18:34:24.934+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-26T18:34:24.952+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: send_data_to_powerbi.compact_csv_to_one_file manual__2025-06-26T11:34:01.478643+00:00 [queued]>
+[2025-06-26T18:34:24.957+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: send_data_to_powerbi.compact_csv_to_one_file manual__2025-06-26T11:34:01.478643+00:00 [queued]>
+[2025-06-26T18:34:24.957+0700] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-06-26T18:34:24.975+0700] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): compact_csv_to_one_file> on 2025-06-26 11:34:01.478643+00:00
+[2025-06-26T18:34:24.983+0700] {standard_task_runner.py:63} INFO - Started process 15557 to run task
+[2025-06-26T18:34:24.988+0700] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'send_data_to_powerbi', 'compact_csv_to_one_file', 'manual__2025-06-26T11:34:01.478643+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/load_power_bi.py', '--cfg-path', '/tmp/tmp1q6sy5lx']
+[2025-06-26T18:34:24.989+0700] {standard_task_runner.py:91} INFO - Job 51: Subtask compact_csv_to_one_file
+[2025-06-26T18:34:25.031+0700] {task_command.py:426} INFO - Running <TaskInstance: send_data_to_powerbi.compact_csv_to_one_file manual__2025-06-26T11:34:01.478643+00:00 [running]> on host Panda
+[2025-06-26T18:34:25.090+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='group_03' AIRFLOW_CTX_DAG_ID='send_data_to_powerbi' AIRFLOW_CTX_TASK_ID='compact_csv_to_one_file' AIRFLOW_CTX_EXECUTION_DATE='2025-06-26T11:34:01.478643+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-26T11:34:01.478643+00:00'
+[2025-06-26T18:34:25.091+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-26T18:34:25.092+0700] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-06-26T18:34:25.092+0700] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'spark-submit /home/panda/Documents/ODAP/Project/hadoop/compact_csv.py && sleep 10']
+[2025-06-26T18:34:25.112+0700] {subprocess.py:86} INFO - Output:
+[2025-06-26T18:34:27.536+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO SparkContext: Running Spark version 3.5.5
+[2025-06-26T18:34:27.538+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO SparkContext: OS info Linux, 6.11.0-26-generic, amd64
+[2025-06-26T18:34:27.538+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO SparkContext: Java version 11.0.27
+[2025-06-26T18:34:27.705+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO ResourceUtils: ==============================================================
+[2025-06-26T18:34:27.706+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2025-06-26T18:34:27.706+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO ResourceUtils: ==============================================================
+[2025-06-26T18:34:27.706+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO SparkContext: Submitted application: CompactSmallFiles
+[2025-06-26T18:34:27.739+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2025-06-26T18:34:27.755+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO ResourceProfile: Limiting resource is cpu
+[2025-06-26T18:34:27.755+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2025-06-26T18:34:27.835+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO SecurityManager: Changing view acls to: panda
+[2025-06-26T18:34:27.836+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO SecurityManager: Changing modify acls to: panda
+[2025-06-26T18:34:27.836+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO SecurityManager: Changing view acls groups to:
+[2025-06-26T18:34:27.836+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO SecurityManager: Changing modify acls groups to:
+[2025-06-26T18:34:27.836+0700] {subprocess.py:93} INFO - 25/06/26 18:34:27 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: panda; groups with view permissions: EMPTY; users with modify permissions: panda; groups with modify permissions: EMPTY
+[2025-06-26T18:34:28.138+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO Utils: Successfully started service 'sparkDriver' on port 33149.
+[2025-06-26T18:34:28.183+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO SparkEnv: Registering MapOutputTracker
+[2025-06-26T18:34:28.231+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO SparkEnv: Registering BlockManagerMaster
+[2025-06-26T18:34:28.259+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2025-06-26T18:34:28.260+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2025-06-26T18:34:28.266+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2025-06-26T18:34:28.295+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-d6666a22-df68-4a89-b25c-1529c437ee34
+[2025-06-26T18:34:28.311+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2025-06-26T18:34:28.328+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO SparkEnv: Registering OutputCommitCoordinator
+[2025-06-26T18:34:28.480+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO JettyUtils: Start Jetty 127.0.0.1:4040 for SparkUI
+[2025-06-26T18:34:28.554+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2025-06-26T18:34:28.672+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO Executor: Starting executor ID driver on host localhost
+[2025-06-26T18:34:28.672+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO Executor: OS info Linux, 6.11.0-26-generic, amd64
+[2025-06-26T18:34:28.673+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO Executor: Java version 11.0.27
+[2025-06-26T18:34:28.681+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[2025-06-26T18:34:28.681+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@6dcac34e for default.
+[2025-06-26T18:34:28.708+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44043.
+[2025-06-26T18:34:28.709+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO NettyBlockTransferService: Server created on localhost:44043
+[2025-06-26T18:34:28.711+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2025-06-26T18:34:28.719+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, localhost, 44043, None)
+[2025-06-26T18:34:28.725+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO BlockManagerMasterEndpoint: Registering block manager localhost:44043 with 434.4 MiB RAM, BlockManagerId(driver, localhost, 44043, None)
+[2025-06-26T18:34:28.728+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, localhost, 44043, None)
+[2025-06-26T18:34:28.729+0700] {subprocess.py:93} INFO - 25/06/26 18:34:28 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, localhost, 44043, None)
+[2025-06-26T18:34:29.199+0700] {subprocess.py:93} INFO - 25/06/26 18:34:29 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2025-06-26T18:34:29.207+0700] {subprocess.py:93} INFO - 25/06/26 18:34:29 INFO SharedState: Warehouse path is 'file:/tmp/airflowtmputp0ngzu/spark-warehouse'.
+[2025-06-26T18:34:30.511+0700] {subprocess.py:93} INFO - 25/06/26 18:34:30 INFO MetadataLogFileIndex: Reading streaming file log from hdfs://localhost:9000/transactions_by_hour/_spark_metadata
+[2025-06-26T18:34:30.581+0700] {subprocess.py:93} INFO - 25/06/26 18:34:30 INFO FileStreamSinkLog: BatchIds found from listing: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148
+[2025-06-26T18:34:30.623+0700] {subprocess.py:93} INFO - 25/06/26 18:34:30 INFO FileStreamSinkLog: Set the compact interval to 10 [defaultCompactInterval: 10]
+[2025-06-26T18:34:31.099+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO HadoopFSUtils: Listing leaf files and directories in parallel under 149 paths. The first several paths are: hdfs://localhost:9000/transactions_by_hour/part-00000-bb8e9023-9b02-4175-a80b-0bcd66f220bf-c000.csv, hdfs://localhost:9000/transactions_by_hour/part-00000-71db78a4-5a68-4e86-ab52-811799d8429d-c000.csv, hdfs://localhost:9000/transactions_by_hour/part-00000-3978d575-97e5-4096-9883-dac5aa201568-c000.csv, hdfs://localhost:9000/transactions_by_hour/part-00000-0350f0e5-ad33-4abe-aa50-2a362584824e-c000.csv, hdfs://localhost:9000/transactions_by_hour/part-00000-e8b907bd-9eab-43a3-9173-93788c2d1762-c000.csv, hdfs://localhost:9000/transactions_by_hour/part-00000-ddea7f8b-1391-43bb-b913-1f30408f9697-c000.csv, hdfs://localhost:9000/transactions_by_hour/part-00000-8655a41e-ddba-480c-8a8a-c56164c7bfbf-c000.csv, hdfs://localhost:9000/transactions_by_hour/part-00000-2505f243-eaec-445e-a812-23ac922a22c4-c000.csv, hdfs://localhost:9000/transactions_by_hour/part-00000-aa7b7aa4-3f53-4ee7-85f7-e28d4c130ba5-c000.csv, hdfs://localhost:9000/transactions_by_hour/part-00000-48ec54eb-9275-4c64-8008-84d2f624a0fa-c000.csv.
+[2025-06-26T18:34:31.494+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+[2025-06-26T18:34:31.518+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO DAGScheduler: Got job 0 (csv at NativeMethodAccessorImpl.java:0) with 149 output partitions
+[2025-06-26T18:34:31.518+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO DAGScheduler: Final stage: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0)
+[2025-06-26T18:34:31.519+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO DAGScheduler: Parents of final stage: List()
+[2025-06-26T18:34:31.520+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO DAGScheduler: Missing parents: List()
+[2025-06-26T18:34:31.524+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[1] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+[2025-06-26T18:34:31.647+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 103.2 KiB, free 434.3 MiB)
+[2025-06-26T18:34:31.696+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 37.3 KiB, free 434.3 MiB)
+[2025-06-26T18:34:31.700+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:44043 (size: 37.3 KiB, free: 434.4 MiB)
+[2025-06-26T18:34:31.706+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1585
+[2025-06-26T18:34:31.733+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO DAGScheduler: Submitting 149 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+[2025-06-26T18:34:31.735+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSchedulerImpl: Adding task set 0.0 with 149 tasks resource profile 0
+[2025-06-26T18:34:31.816+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (localhost, executor driver, partition 0, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.822+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (localhost, executor driver, partition 1, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.823+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2) (localhost, executor driver, partition 2, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.824+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3) (localhost, executor driver, partition 3, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.825+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4) (localhost, executor driver, partition 4, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.826+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5) (localhost, executor driver, partition 5, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.827+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6) (localhost, executor driver, partition 6, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.828+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7) (localhost, executor driver, partition 7, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.829+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8) (localhost, executor driver, partition 8, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.829+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9) (localhost, executor driver, partition 9, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.830+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 10.0 in stage 0.0 (TID 10) (localhost, executor driver, partition 10, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.830+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 11.0 in stage 0.0 (TID 11) (localhost, executor driver, partition 11, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.831+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 12.0 in stage 0.0 (TID 12) (localhost, executor driver, partition 12, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.832+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 13.0 in stage 0.0 (TID 13) (localhost, executor driver, partition 13, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.832+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 14.0 in stage 0.0 (TID 14) (localhost, executor driver, partition 14, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.833+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 15.0 in stage 0.0 (TID 15) (localhost, executor driver, partition 15, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.834+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 16.0 in stage 0.0 (TID 16) (localhost, executor driver, partition 16, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.835+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 17.0 in stage 0.0 (TID 17) (localhost, executor driver, partition 17, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.835+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 18.0 in stage 0.0 (TID 18) (localhost, executor driver, partition 18, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.836+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 19.0 in stage 0.0 (TID 19) (localhost, executor driver, partition 19, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.836+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 20.0 in stage 0.0 (TID 20) (localhost, executor driver, partition 20, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.837+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO TaskSetManager: Starting task 21.0 in stage 0.0 (TID 21) (localhost, executor driver, partition 21, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:31.857+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 20.0 in stage 0.0 (TID 20)
+[2025-06-26T18:34:31.857+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 18.0 in stage 0.0 (TID 18)
+[2025-06-26T18:34:31.857+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 21.0 in stage 0.0 (TID 21)
+[2025-06-26T18:34:31.858+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 11.0 in stage 0.0 (TID 11)
+[2025-06-26T18:34:31.858+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 4.0 in stage 0.0 (TID 4)
+[2025-06-26T18:34:31.858+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 14.0 in stage 0.0 (TID 14)
+[2025-06-26T18:34:31.858+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 17.0 in stage 0.0 (TID 17)
+[2025-06-26T18:34:31.858+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 8.0 in stage 0.0 (TID 8)
+[2025-06-26T18:34:31.858+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 12.0 in stage 0.0 (TID 12)
+[2025-06-26T18:34:31.858+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 16.0 in stage 0.0 (TID 16)
+[2025-06-26T18:34:31.858+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 10.0 in stage 0.0 (TID 10)
+[2025-06-26T18:34:31.858+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 19.0 in stage 0.0 (TID 19)
+[2025-06-26T18:34:31.858+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 7.0 in stage 0.0 (TID 7)
+[2025-06-26T18:34:31.859+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+[2025-06-26T18:34:31.859+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 15.0 in stage 0.0 (TID 15)
+[2025-06-26T18:34:31.859+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 13.0 in stage 0.0 (TID 13)
+[2025-06-26T18:34:31.859+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 5.0 in stage 0.0 (TID 5)
+[2025-06-26T18:34:31.859+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+[2025-06-26T18:34:31.859+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+[2025-06-26T18:34:31.859+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 9.0 in stage 0.0 (TID 9)
+[2025-06-26T18:34:31.859+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 6.0 in stage 0.0 (TID 6)
+[2025-06-26T18:34:31.859+0700] {subprocess.py:93} INFO - 25/06/26 18:34:31 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+[2025-06-26T18:34:32.227+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 6.0 in stage 0.0 (TID 6). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.228+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 14.0 in stage 0.0 (TID 14). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.228+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 18.0 in stage 0.0 (TID 18). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.229+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 15.0 in stage 0.0 (TID 15). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.230+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 5.0 in stage 0.0 (TID 5). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.231+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 3.0 in stage 0.0 (TID 3). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.231+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 19.0 in stage 0.0 (TID 19). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.231+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 12.0 in stage 0.0 (TID 12). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.232+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 21.0 in stage 0.0 (TID 21). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.232+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 11.0 in stage 0.0 (TID 11). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.232+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.232+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 20.0 in stage 0.0 (TID 20). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.232+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.232+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 4.0 in stage 0.0 (TID 4). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.232+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 8.0 in stage 0.0 (TID 8). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.232+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 13.0 in stage 0.0 (TID 13). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.233+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 17.0 in stage 0.0 (TID 17). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.233+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 16.0 in stage 0.0 (TID 16). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.233+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 10.0 in stage 0.0 (TID 10). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.233+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 7.0 in stage 0.0 (TID 7). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.233+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.233+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 9.0 in stage 0.0 (TID 9). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.240+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 22.0 in stage 0.0 (TID 22) (localhost, executor driver, partition 22, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.241+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 22.0 in stage 0.0 (TID 22)
+[2025-06-26T18:34:32.242+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 23.0 in stage 0.0 (TID 23) (localhost, executor driver, partition 23, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.242+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 23.0 in stage 0.0 (TID 23)
+[2025-06-26T18:34:32.243+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 24.0 in stage 0.0 (TID 24) (localhost, executor driver, partition 24, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.244+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 24.0 in stage 0.0 (TID 24)
+[2025-06-26T18:34:32.248+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 25.0 in stage 0.0 (TID 25) (localhost, executor driver, partition 25, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.249+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 25.0 in stage 0.0 (TID 25)
+[2025-06-26T18:34:32.251+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 20.0 in stage 0.0 (TID 20) in 413 ms on localhost (executor driver) (1/149)
+[2025-06-26T18:34:32.254+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 428 ms on localhost (executor driver) (2/149)
+[2025-06-26T18:34:32.255+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 12.0 in stage 0.0 (TID 12) in 423 ms on localhost (executor driver) (3/149)
+[2025-06-26T18:34:32.257+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 26.0 in stage 0.0 (TID 26) (localhost, executor driver, partition 26, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.258+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 467 ms on localhost (executor driver) (4/149)
+[2025-06-26T18:34:32.259+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 26.0 in stage 0.0 (TID 26)
+[2025-06-26T18:34:32.259+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 15.0 in stage 0.0 (TID 15) in 426 ms on localhost (executor driver) (5/149)
+[2025-06-26T18:34:32.260+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 27.0 in stage 0.0 (TID 27) (localhost, executor driver, partition 27, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.261+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 27.0 in stage 0.0 (TID 27)
+[2025-06-26T18:34:32.261+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 24.0 in stage 0.0 (TID 24). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.261+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 23.0 in stage 0.0 (TID 23). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.261+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 28.0 in stage 0.0 (TID 28) (localhost, executor driver, partition 28, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.262+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 22.0 in stage 0.0 (TID 22). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.262+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 28.0 in stage 0.0 (TID 28)
+[2025-06-26T18:34:32.262+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 29.0 in stage 0.0 (TID 29) (localhost, executor driver, partition 29, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.262+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 18.0 in stage 0.0 (TID 18) in 428 ms on localhost (executor driver) (6/149)
+[2025-06-26T18:34:32.262+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 29.0 in stage 0.0 (TID 29)
+[2025-06-26T18:34:32.263+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 30.0 in stage 0.0 (TID 30) (localhost, executor driver, partition 30, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.265+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 25.0 in stage 0.0 (TID 25). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.265+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 30.0 in stage 0.0 (TID 30)
+[2025-06-26T18:34:32.266+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 31.0 in stage 0.0 (TID 31) (localhost, executor driver, partition 31, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.266+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 10.0 in stage 0.0 (TID 10) in 435 ms on localhost (executor driver) (7/149)
+[2025-06-26T18:34:32.266+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 31.0 in stage 0.0 (TID 31)
+[2025-06-26T18:34:32.266+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 32.0 in stage 0.0 (TID 32) (localhost, executor driver, partition 32, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.267+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 8.0 in stage 0.0 (TID 8) in 438 ms on localhost (executor driver) (8/149)
+[2025-06-26T18:34:32.267+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 32.0 in stage 0.0 (TID 32)
+[2025-06-26T18:34:32.267+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 11.0 in stage 0.0 (TID 11) in 437 ms on localhost (executor driver) (9/149)
+[2025-06-26T18:34:32.268+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 441 ms on localhost (executor driver) (10/149)
+[2025-06-26T18:34:32.272+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 33.0 in stage 0.0 (TID 33) (localhost, executor driver, partition 33, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.272+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 33.0 in stage 0.0 (TID 33)
+[2025-06-26T18:34:32.273+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 13.0 in stage 0.0 (TID 13) in 441 ms on localhost (executor driver) (11/149)
+[2025-06-26T18:34:32.274+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 26.0 in stage 0.0 (TID 26). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.274+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 9.0 in stage 0.0 (TID 9) in 444 ms on localhost (executor driver) (12/149)
+[2025-06-26T18:34:32.275+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 34.0 in stage 0.0 (TID 34) (localhost, executor driver, partition 34, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.277+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 35.0 in stage 0.0 (TID 35) (localhost, executor driver, partition 35, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.277+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 34.0 in stage 0.0 (TID 34)
+[2025-06-26T18:34:32.278+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 27.0 in stage 0.0 (TID 27). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.278+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 36.0 in stage 0.0 (TID 36) (localhost, executor driver, partition 36, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.279+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 36.0 in stage 0.0 (TID 36)
+[2025-06-26T18:34:32.280+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 35.0 in stage 0.0 (TID 35)
+[2025-06-26T18:34:32.281+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 37.0 in stage 0.0 (TID 37) (localhost, executor driver, partition 37, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.283+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 38.0 in stage 0.0 (TID 38) (localhost, executor driver, partition 38, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.284+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 37.0 in stage 0.0 (TID 37)
+[2025-06-26T18:34:32.284+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 38.0 in stage 0.0 (TID 38)
+[2025-06-26T18:34:32.285+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 39.0 in stage 0.0 (TID 39) (localhost, executor driver, partition 39, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.285+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 462 ms on localhost (executor driver) (13/149)
+[2025-06-26T18:34:32.285+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 14.0 in stage 0.0 (TID 14) in 452 ms on localhost (executor driver) (14/149)
+[2025-06-26T18:34:32.285+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 461 ms on localhost (executor driver) (15/149)
+[2025-06-26T18:34:32.287+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 39.0 in stage 0.0 (TID 39)
+[2025-06-26T18:34:32.287+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 40.0 in stage 0.0 (TID 40) (localhost, executor driver, partition 40, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.288+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 462 ms on localhost (executor driver) (16/149)
+[2025-06-26T18:34:32.288+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 28.0 in stage 0.0 (TID 28). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.288+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 40.0 in stage 0.0 (TID 40)
+[2025-06-26T18:34:32.289+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 29.0 in stage 0.0 (TID 29). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.291+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 32.0 in stage 0.0 (TID 32). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.292+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 41.0 in stage 0.0 (TID 41) (localhost, executor driver, partition 41, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.294+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 31.0 in stage 0.0 (TID 31). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.296+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 30.0 in stage 0.0 (TID 30). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.297+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 41.0 in stage 0.0 (TID 41)
+[2025-06-26T18:34:32.298+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 42.0 in stage 0.0 (TID 42) (localhost, executor driver, partition 42, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.302+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 478 ms on localhost (executor driver) (17/149)
+[2025-06-26T18:34:32.303+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 42.0 in stage 0.0 (TID 42)
+[2025-06-26T18:34:32.304+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 34.0 in stage 0.0 (TID 34). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.304+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 33.0 in stage 0.0 (TID 33). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.304+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 36.0 in stage 0.0 (TID 36). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.320+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 38.0 in stage 0.0 (TID 38). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.320+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 43.0 in stage 0.0 (TID 43) (localhost, executor driver, partition 43, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.323+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 19.0 in stage 0.0 (TID 19) in 486 ms on localhost (executor driver) (18/149)
+[2025-06-26T18:34:32.323+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 43.0 in stage 0.0 (TID 43)
+[2025-06-26T18:34:32.324+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 35.0 in stage 0.0 (TID 35). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.324+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 37.0 in stage 0.0 (TID 37). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.324+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 498 ms on localhost (executor driver) (19/149)
+[2025-06-26T18:34:32.325+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 17.0 in stage 0.0 (TID 17) in 491 ms on localhost (executor driver) (20/149)
+[2025-06-26T18:34:32.326+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 21.0 in stage 0.0 (TID 21) in 489 ms on localhost (executor driver) (21/149)
+[2025-06-26T18:34:32.326+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 39.0 in stage 0.0 (TID 39). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.326+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 40.0 in stage 0.0 (TID 40). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.328+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 44.0 in stage 0.0 (TID 44) (localhost, executor driver, partition 44, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.330+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 44.0 in stage 0.0 (TID 44)
+[2025-06-26T18:34:32.332+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 45.0 in stage 0.0 (TID 45) (localhost, executor driver, partition 45, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.333+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 23.0 in stage 0.0 (TID 23) in 91 ms on localhost (executor driver) (22/149)
+[2025-06-26T18:34:32.334+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 16.0 in stage 0.0 (TID 16) in 499 ms on localhost (executor driver) (23/149)
+[2025-06-26T18:34:32.336+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 45.0 in stage 0.0 (TID 45)
+[2025-06-26T18:34:32.337+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 46.0 in stage 0.0 (TID 46) (localhost, executor driver, partition 46, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.337+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 46.0 in stage 0.0 (TID 46)
+[2025-06-26T18:34:32.338+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 41.0 in stage 0.0 (TID 41). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.340+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 47.0 in stage 0.0 (TID 47) (localhost, executor driver, partition 47, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.340+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 47.0 in stage 0.0 (TID 47)
+[2025-06-26T18:34:32.341+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 24.0 in stage 0.0 (TID 24) in 97 ms on localhost (executor driver) (24/149)
+[2025-06-26T18:34:32.341+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 42.0 in stage 0.0 (TID 42). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.341+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 48.0 in stage 0.0 (TID 48) (localhost, executor driver, partition 48, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.342+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 48.0 in stage 0.0 (TID 48)
+[2025-06-26T18:34:32.343+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 49.0 in stage 0.0 (TID 49) (localhost, executor driver, partition 49, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.343+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 43.0 in stage 0.0 (TID 43). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.344+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 26.0 in stage 0.0 (TID 26) in 87 ms on localhost (executor driver) (25/149)
+[2025-06-26T18:34:32.344+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 49.0 in stage 0.0 (TID 49)
+[2025-06-26T18:34:32.362+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 27.0 in stage 0.0 (TID 27) in 85 ms on localhost (executor driver) (26/149)
+[2025-06-26T18:34:32.363+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 25.0 in stage 0.0 (TID 25) in 115 ms on localhost (executor driver) (27/149)
+[2025-06-26T18:34:32.363+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 22.0 in stage 0.0 (TID 22) in 123 ms on localhost (executor driver) (28/149)
+[2025-06-26T18:34:32.366+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 50.0 in stage 0.0 (TID 50) (localhost, executor driver, partition 50, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.366+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 50.0 in stage 0.0 (TID 50)
+[2025-06-26T18:34:32.367+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 51.0 in stage 0.0 (TID 51) (localhost, executor driver, partition 51, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.369+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 28.0 in stage 0.0 (TID 28) in 106 ms on localhost (executor driver) (29/149)
+[2025-06-26T18:34:32.369+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 51.0 in stage 0.0 (TID 51)
+[2025-06-26T18:34:32.371+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 52.0 in stage 0.0 (TID 52) (localhost, executor driver, partition 52, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.372+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 46.0 in stage 0.0 (TID 46). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.372+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 52.0 in stage 0.0 (TID 52)
+[2025-06-26T18:34:32.373+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 53.0 in stage 0.0 (TID 53) (localhost, executor driver, partition 53, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.373+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 48.0 in stage 0.0 (TID 48). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.373+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 44.0 in stage 0.0 (TID 44). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.373+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 49.0 in stage 0.0 (TID 49). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.373+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 29.0 in stage 0.0 (TID 29) in 112 ms on localhost (executor driver) (30/149)
+[2025-06-26T18:34:32.373+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 47.0 in stage 0.0 (TID 47). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.374+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 53.0 in stage 0.0 (TID 53)
+[2025-06-26T18:34:32.374+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 32.0 in stage 0.0 (TID 32) in 108 ms on localhost (executor driver) (31/149)
+[2025-06-26T18:34:32.375+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 31.0 in stage 0.0 (TID 31) in 112 ms on localhost (executor driver) (32/149)
+[2025-06-26T18:34:32.377+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 54.0 in stage 0.0 (TID 54) (localhost, executor driver, partition 54, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.377+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 54.0 in stage 0.0 (TID 54)
+[2025-06-26T18:34:32.378+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 55.0 in stage 0.0 (TID 55) (localhost, executor driver, partition 55, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.379+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 30.0 in stage 0.0 (TID 30) in 116 ms on localhost (executor driver) (33/149)
+[2025-06-26T18:34:32.379+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 55.0 in stage 0.0 (TID 55)
+[2025-06-26T18:34:32.379+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 50.0 in stage 0.0 (TID 50). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.380+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 45.0 in stage 0.0 (TID 45). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.380+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 51.0 in stage 0.0 (TID 51). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.382+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 56.0 in stage 0.0 (TID 56) (localhost, executor driver, partition 56, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.383+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 34.0 in stage 0.0 (TID 34) in 108 ms on localhost (executor driver) (34/149)
+[2025-06-26T18:34:32.383+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 56.0 in stage 0.0 (TID 56)
+[2025-06-26T18:34:32.385+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 33.0 in stage 0.0 (TID 33) in 113 ms on localhost (executor driver) (35/149)
+[2025-06-26T18:34:32.386+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 57.0 in stage 0.0 (TID 57) (localhost, executor driver, partition 57, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.388+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 36.0 in stage 0.0 (TID 36) in 109 ms on localhost (executor driver) (36/149)
+[2025-06-26T18:34:32.388+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 57.0 in stage 0.0 (TID 57)
+[2025-06-26T18:34:32.388+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 52.0 in stage 0.0 (TID 52). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.389+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 53.0 in stage 0.0 (TID 53). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.389+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 58.0 in stage 0.0 (TID 58) (localhost, executor driver, partition 58, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.390+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 58.0 in stage 0.0 (TID 58)
+[2025-06-26T18:34:32.391+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 59.0 in stage 0.0 (TID 59) (localhost, executor driver, partition 59, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.392+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 38.0 in stage 0.0 (TID 38) in 109 ms on localhost (executor driver) (37/149)
+[2025-06-26T18:34:32.392+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 59.0 in stage 0.0 (TID 59)
+[2025-06-26T18:34:32.392+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 35.0 in stage 0.0 (TID 35) in 116 ms on localhost (executor driver) (38/149)
+[2025-06-26T18:34:32.396+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 60.0 in stage 0.0 (TID 60) (localhost, executor driver, partition 60, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.396+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 54.0 in stage 0.0 (TID 54). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.397+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 55.0 in stage 0.0 (TID 55). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.397+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 61.0 in stage 0.0 (TID 61) (localhost, executor driver, partition 61, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.397+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 60.0 in stage 0.0 (TID 60)
+[2025-06-26T18:34:32.397+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 61.0 in stage 0.0 (TID 61)
+[2025-06-26T18:34:32.399+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 62.0 in stage 0.0 (TID 62) (localhost, executor driver, partition 62, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.400+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 37.0 in stage 0.0 (TID 37) in 120 ms on localhost (executor driver) (39/149)
+[2025-06-26T18:34:32.400+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 56.0 in stage 0.0 (TID 56). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.402+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 62.0 in stage 0.0 (TID 62)
+[2025-06-26T18:34:32.403+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 63.0 in stage 0.0 (TID 63) (localhost, executor driver, partition 63, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.405+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 40.0 in stage 0.0 (TID 40) in 120 ms on localhost (executor driver) (40/149)
+[2025-06-26T18:34:32.405+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 63.0 in stage 0.0 (TID 63)
+[2025-06-26T18:34:32.407+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 58.0 in stage 0.0 (TID 58). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.408+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 57.0 in stage 0.0 (TID 57). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.408+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 64.0 in stage 0.0 (TID 64) (localhost, executor driver, partition 64, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.408+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 41.0 in stage 0.0 (TID 41) in 118 ms on localhost (executor driver) (41/149)
+[2025-06-26T18:34:32.411+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 39.0 in stage 0.0 (TID 39) in 125 ms on localhost (executor driver) (42/149)
+[2025-06-26T18:34:32.411+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 64.0 in stage 0.0 (TID 64)
+[2025-06-26T18:34:32.412+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 59.0 in stage 0.0 (TID 59). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.413+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 65.0 in stage 0.0 (TID 65) (localhost, executor driver, partition 65, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.413+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 42.0 in stage 0.0 (TID 42) in 118 ms on localhost (executor driver) (43/149)
+[2025-06-26T18:34:32.414+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 65.0 in stage 0.0 (TID 65)
+[2025-06-26T18:34:32.415+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 66.0 in stage 0.0 (TID 66) (localhost, executor driver, partition 66, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.416+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 66.0 in stage 0.0 (TID 66)
+[2025-06-26T18:34:32.417+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 67.0 in stage 0.0 (TID 67) (localhost, executor driver, partition 67, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.418+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 43.0 in stage 0.0 (TID 43) in 114 ms on localhost (executor driver) (44/149)
+[2025-06-26T18:34:32.418+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 67.0 in stage 0.0 (TID 67)
+[2025-06-26T18:34:32.419+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 68.0 in stage 0.0 (TID 68) (localhost, executor driver, partition 68, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.419+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 61.0 in stage 0.0 (TID 61). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.419+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 60.0 in stage 0.0 (TID 60). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.419+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 68.0 in stage 0.0 (TID 68)
+[2025-06-26T18:34:32.419+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 69.0 in stage 0.0 (TID 69) (localhost, executor driver, partition 69, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.420+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 46.0 in stage 0.0 (TID 46) in 85 ms on localhost (executor driver) (45/149)
+[2025-06-26T18:34:32.420+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 69.0 in stage 0.0 (TID 69)
+[2025-06-26T18:34:32.421+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 70.0 in stage 0.0 (TID 70) (localhost, executor driver, partition 70, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.421+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 49.0 in stage 0.0 (TID 49) in 79 ms on localhost (executor driver) (46/149)
+[2025-06-26T18:34:32.421+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 70.0 in stage 0.0 (TID 70)
+[2025-06-26T18:34:32.421+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 44.0 in stage 0.0 (TID 44) in 94 ms on localhost (executor driver) (47/149)
+[2025-06-26T18:34:32.422+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 48.0 in stage 0.0 (TID 48) in 81 ms on localhost (executor driver) (48/149)
+[2025-06-26T18:34:32.422+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 47.0 in stage 0.0 (TID 47) in 84 ms on localhost (executor driver) (49/149)
+[2025-06-26T18:34:32.422+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 62.0 in stage 0.0 (TID 62). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.423+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 71.0 in stage 0.0 (TID 71) (localhost, executor driver, partition 71, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.424+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 71.0 in stage 0.0 (TID 71)
+[2025-06-26T18:34:32.425+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 72.0 in stage 0.0 (TID 72) (localhost, executor driver, partition 72, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.427+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 72.0 in stage 0.0 (TID 72)
+[2025-06-26T18:34:32.428+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 73.0 in stage 0.0 (TID 73) (localhost, executor driver, partition 73, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.428+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 73.0 in stage 0.0 (TID 73)
+[2025-06-26T18:34:32.428+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 64.0 in stage 0.0 (TID 64). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.428+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 74.0 in stage 0.0 (TID 74) (localhost, executor driver, partition 74, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.430+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 45.0 in stage 0.0 (TID 45) in 100 ms on localhost (executor driver) (50/149)
+[2025-06-26T18:34:32.431+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 74.0 in stage 0.0 (TID 74)
+[2025-06-26T18:34:32.432+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 63.0 in stage 0.0 (TID 63). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.433+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 65.0 in stage 0.0 (TID 65). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.433+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 50.0 in stage 0.0 (TID 50) in 66 ms on localhost (executor driver) (51/149)
+[2025-06-26T18:34:32.435+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 75.0 in stage 0.0 (TID 75) (localhost, executor driver, partition 75, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.440+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 75.0 in stage 0.0 (TID 75)
+[2025-06-26T18:34:32.451+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 76.0 in stage 0.0 (TID 76) (localhost, executor driver, partition 76, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.452+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 70.0 in stage 0.0 (TID 70). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.452+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 67.0 in stage 0.0 (TID 67). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.452+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 69.0 in stage 0.0 (TID 69). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.453+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 52.0 in stage 0.0 (TID 52) in 80 ms on localhost (executor driver) (52/149)
+[2025-06-26T18:34:32.453+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 76.0 in stage 0.0 (TID 76)
+[2025-06-26T18:34:32.453+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 68.0 in stage 0.0 (TID 68). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.453+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 66.0 in stage 0.0 (TID 66). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.454+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 51.0 in stage 0.0 (TID 51) in 86 ms on localhost (executor driver) (53/149)
+[2025-06-26T18:34:32.454+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 54.0 in stage 0.0 (TID 54) in 78 ms on localhost (executor driver) (54/149)
+[2025-06-26T18:34:32.456+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 53.0 in stage 0.0 (TID 53) in 83 ms on localhost (executor driver) (55/149)
+[2025-06-26T18:34:32.458+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 73.0 in stage 0.0 (TID 73). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.458+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 77.0 in stage 0.0 (TID 77) (localhost, executor driver, partition 77, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.460+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 78.0 in stage 0.0 (TID 78) (localhost, executor driver, partition 78, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.460+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 77.0 in stage 0.0 (TID 77)
+[2025-06-26T18:34:32.461+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 78.0 in stage 0.0 (TID 78)
+[2025-06-26T18:34:32.461+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 74.0 in stage 0.0 (TID 74). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.461+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 79.0 in stage 0.0 (TID 79) (localhost, executor driver, partition 79, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.462+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 79.0 in stage 0.0 (TID 79)
+[2025-06-26T18:34:32.463+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 80.0 in stage 0.0 (TID 80) (localhost, executor driver, partition 80, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.463+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 80.0 in stage 0.0 (TID 80)
+[2025-06-26T18:34:32.463+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 55.0 in stage 0.0 (TID 55) in 85 ms on localhost (executor driver) (56/149)
+[2025-06-26T18:34:32.466+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 56.0 in stage 0.0 (TID 56) in 84 ms on localhost (executor driver) (57/149)
+[2025-06-26T18:34:32.467+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 71.0 in stage 0.0 (TID 71). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.468+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 81.0 in stage 0.0 (TID 81) (localhost, executor driver, partition 81, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.468+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 75.0 in stage 0.0 (TID 75). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.468+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 76.0 in stage 0.0 (TID 76). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.468+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 81.0 in stage 0.0 (TID 81)
+[2025-06-26T18:34:32.468+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 58.0 in stage 0.0 (TID 58) in 79 ms on localhost (executor driver) (58/149)
+[2025-06-26T18:34:32.469+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 57.0 in stage 0.0 (TID 57) in 83 ms on localhost (executor driver) (59/149)
+[2025-06-26T18:34:32.469+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 72.0 in stage 0.0 (TID 72). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.487+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 82.0 in stage 0.0 (TID 82) (localhost, executor driver, partition 82, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.487+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 59.0 in stage 0.0 (TID 59) in 97 ms on localhost (executor driver) (60/149)
+[2025-06-26T18:34:32.488+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 61.0 in stage 0.0 (TID 61) in 92 ms on localhost (executor driver) (61/149)
+[2025-06-26T18:34:32.488+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 82.0 in stage 0.0 (TID 82)
+[2025-06-26T18:34:32.489+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 83.0 in stage 0.0 (TID 83) (localhost, executor driver, partition 83, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.490+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 83.0 in stage 0.0 (TID 83)
+[2025-06-26T18:34:32.491+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 84.0 in stage 0.0 (TID 84) (localhost, executor driver, partition 84, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.491+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 60.0 in stage 0.0 (TID 60) in 99 ms on localhost (executor driver) (62/149)
+[2025-06-26T18:34:32.491+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 84.0 in stage 0.0 (TID 84)
+[2025-06-26T18:34:32.492+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 85.0 in stage 0.0 (TID 85) (localhost, executor driver, partition 85, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.493+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 85.0 in stage 0.0 (TID 85)
+[2025-06-26T18:34:32.493+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 62.0 in stage 0.0 (TID 62) in 93 ms on localhost (executor driver) (63/149)
+[2025-06-26T18:34:32.494+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 78.0 in stage 0.0 (TID 78). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.494+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 80.0 in stage 0.0 (TID 80). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.495+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 77.0 in stage 0.0 (TID 77). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.495+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 81.0 in stage 0.0 (TID 81). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.495+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 86.0 in stage 0.0 (TID 86) (localhost, executor driver, partition 86, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.495+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 79.0 in stage 0.0 (TID 79). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.498+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 86.0 in stage 0.0 (TID 86)
+[2025-06-26T18:34:32.499+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 87.0 in stage 0.0 (TID 87) (localhost, executor driver, partition 87, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.499+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 64.0 in stage 0.0 (TID 64) in 92 ms on localhost (executor driver) (64/149)
+[2025-06-26T18:34:32.500+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 87.0 in stage 0.0 (TID 87)
+[2025-06-26T18:34:32.500+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 65.0 in stage 0.0 (TID 65) in 87 ms on localhost (executor driver) (65/149)
+[2025-06-26T18:34:32.500+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 63.0 in stage 0.0 (TID 63) in 97 ms on localhost (executor driver) (66/149)
+[2025-06-26T18:34:32.501+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 88.0 in stage 0.0 (TID 88) (localhost, executor driver, partition 88, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.502+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 70.0 in stage 0.0 (TID 70) in 82 ms on localhost (executor driver) (67/149)
+[2025-06-26T18:34:32.502+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 88.0 in stage 0.0 (TID 88)
+[2025-06-26T18:34:32.503+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 89.0 in stage 0.0 (TID 89) (localhost, executor driver, partition 89, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.504+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 89.0 in stage 0.0 (TID 89)
+[2025-06-26T18:34:32.504+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 83.0 in stage 0.0 (TID 83). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.505+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 90.0 in stage 0.0 (TID 90) (localhost, executor driver, partition 90, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.505+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 90.0 in stage 0.0 (TID 90)
+[2025-06-26T18:34:32.505+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 91.0 in stage 0.0 (TID 91) (localhost, executor driver, partition 91, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.505+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 67.0 in stage 0.0 (TID 67) in 89 ms on localhost (executor driver) (68/149)
+[2025-06-26T18:34:32.506+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 91.0 in stage 0.0 (TID 91)
+[2025-06-26T18:34:32.506+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 82.0 in stage 0.0 (TID 82). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.506+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 92.0 in stage 0.0 (TID 92) (localhost, executor driver, partition 92, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.506+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 85.0 in stage 0.0 (TID 85). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.508+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 92.0 in stage 0.0 (TID 92)
+[2025-06-26T18:34:32.509+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 84.0 in stage 0.0 (TID 84). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.509+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 93.0 in stage 0.0 (TID 93) (localhost, executor driver, partition 93, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.509+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 69.0 in stage 0.0 (TID 69) in 88 ms on localhost (executor driver) (69/149)
+[2025-06-26T18:34:32.509+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 93.0 in stage 0.0 (TID 93)
+[2025-06-26T18:34:32.509+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 94.0 in stage 0.0 (TID 94) (localhost, executor driver, partition 94, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.510+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 66.0 in stage 0.0 (TID 66) in 96 ms on localhost (executor driver) (70/149)
+[2025-06-26T18:34:32.511+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 94.0 in stage 0.0 (TID 94)
+[2025-06-26T18:34:32.511+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 73.0 in stage 0.0 (TID 73) in 85 ms on localhost (executor driver) (71/149)
+[2025-06-26T18:34:32.511+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 68.0 in stage 0.0 (TID 68) in 93 ms on localhost (executor driver) (72/149)
+[2025-06-26T18:34:32.511+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 86.0 in stage 0.0 (TID 86). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.513+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 95.0 in stage 0.0 (TID 95) (localhost, executor driver, partition 95, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.514+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 87.0 in stage 0.0 (TID 87). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.514+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 74.0 in stage 0.0 (TID 74) in 88 ms on localhost (executor driver) (73/149)
+[2025-06-26T18:34:32.515+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 95.0 in stage 0.0 (TID 95)
+[2025-06-26T18:34:32.516+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 96.0 in stage 0.0 (TID 96) (localhost, executor driver, partition 96, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.517+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 88.0 in stage 0.0 (TID 88). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.518+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 90.0 in stage 0.0 (TID 90). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.518+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 71.0 in stage 0.0 (TID 71) in 95 ms on localhost (executor driver) (74/149)
+[2025-06-26T18:34:32.518+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 96.0 in stage 0.0 (TID 96)
+[2025-06-26T18:34:32.519+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 75.0 in stage 0.0 (TID 75) in 84 ms on localhost (executor driver) (75/149)
+[2025-06-26T18:34:32.519+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 91.0 in stage 0.0 (TID 91). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.519+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 92.0 in stage 0.0 (TID 92). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.520+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 93.0 in stage 0.0 (TID 93). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.521+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 89.0 in stage 0.0 (TID 89). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.521+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 97.0 in stage 0.0 (TID 97) (localhost, executor driver, partition 97, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.522+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 76.0 in stage 0.0 (TID 76) in 74 ms on localhost (executor driver) (76/149)
+[2025-06-26T18:34:32.523+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 97.0 in stage 0.0 (TID 97)
+[2025-06-26T18:34:32.524+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 94.0 in stage 0.0 (TID 94). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.525+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 98.0 in stage 0.0 (TID 98) (localhost, executor driver, partition 98, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.525+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 98.0 in stage 0.0 (TID 98)
+[2025-06-26T18:34:32.526+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 99.0 in stage 0.0 (TID 99) (localhost, executor driver, partition 99, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.527+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 96.0 in stage 0.0 (TID 96). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.527+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 95.0 in stage 0.0 (TID 95). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.527+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 72.0 in stage 0.0 (TID 72) in 104 ms on localhost (executor driver) (77/149)
+[2025-06-26T18:34:32.528+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 99.0 in stage 0.0 (TID 99)
+[2025-06-26T18:34:32.528+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 78.0 in stage 0.0 (TID 78) in 69 ms on localhost (executor driver) (78/149)
+[2025-06-26T18:34:32.529+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 80.0 in stage 0.0 (TID 80) in 67 ms on localhost (executor driver) (79/149)
+[2025-06-26T18:34:32.532+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 100.0 in stage 0.0 (TID 100) (localhost, executor driver, partition 100, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.533+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 100.0 in stage 0.0 (TID 100)
+[2025-06-26T18:34:32.533+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 101.0 in stage 0.0 (TID 101) (localhost, executor driver, partition 101, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.534+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 101.0 in stage 0.0 (TID 101)
+[2025-06-26T18:34:32.534+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 102.0 in stage 0.0 (TID 102) (localhost, executor driver, partition 102, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.535+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 98.0 in stage 0.0 (TID 98). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.535+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 97.0 in stage 0.0 (TID 97). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.535+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 102.0 in stage 0.0 (TID 102)
+[2025-06-26T18:34:32.535+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 103.0 in stage 0.0 (TID 103) (localhost, executor driver, partition 103, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.535+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 77.0 in stage 0.0 (TID 77) in 78 ms on localhost (executor driver) (80/149)
+[2025-06-26T18:34:32.536+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 103.0 in stage 0.0 (TID 103)
+[2025-06-26T18:34:32.537+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 104.0 in stage 0.0 (TID 104) (localhost, executor driver, partition 104, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.537+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 81.0 in stage 0.0 (TID 81) in 69 ms on localhost (executor driver) (81/149)
+[2025-06-26T18:34:32.537+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 104.0 in stage 0.0 (TID 104)
+[2025-06-26T18:34:32.538+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 105.0 in stage 0.0 (TID 105) (localhost, executor driver, partition 105, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.538+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 105.0 in stage 0.0 (TID 105)
+[2025-06-26T18:34:32.538+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 83.0 in stage 0.0 (TID 83) in 50 ms on localhost (executor driver) (82/149)
+[2025-06-26T18:34:32.539+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 79.0 in stage 0.0 (TID 79) in 77 ms on localhost (executor driver) (83/149)
+[2025-06-26T18:34:32.540+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 82.0 in stage 0.0 (TID 82) in 70 ms on localhost (executor driver) (84/149)
+[2025-06-26T18:34:32.542+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 99.0 in stage 0.0 (TID 99). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.543+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 106.0 in stage 0.0 (TID 106) (localhost, executor driver, partition 106, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.552+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 106.0 in stage 0.0 (TID 106)
+[2025-06-26T18:34:32.553+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 107.0 in stage 0.0 (TID 107) (localhost, executor driver, partition 107, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.553+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 100.0 in stage 0.0 (TID 100). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.554+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 102.0 in stage 0.0 (TID 102). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.554+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 107.0 in stage 0.0 (TID 107)
+[2025-06-26T18:34:32.554+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 103.0 in stage 0.0 (TID 103). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.555+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 85.0 in stage 0.0 (TID 85) in 63 ms on localhost (executor driver) (85/149)
+[2025-06-26T18:34:32.561+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 101.0 in stage 0.0 (TID 101). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.562+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 84.0 in stage 0.0 (TID 84) in 68 ms on localhost (executor driver) (86/149)
+[2025-06-26T18:34:32.562+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 104.0 in stage 0.0 (TID 104). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.563+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 108.0 in stage 0.0 (TID 108) (localhost, executor driver, partition 108, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.564+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 108.0 in stage 0.0 (TID 108)
+[2025-06-26T18:34:32.565+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 109.0 in stage 0.0 (TID 109) (localhost, executor driver, partition 109, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.565+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 105.0 in stage 0.0 (TID 105). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.566+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 110.0 in stage 0.0 (TID 110) (localhost, executor driver, partition 110, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.566+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 86.0 in stage 0.0 (TID 86) in 72 ms on localhost (executor driver) (87/149)
+[2025-06-26T18:34:32.566+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 109.0 in stage 0.0 (TID 109)
+[2025-06-26T18:34:32.567+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 110.0 in stage 0.0 (TID 110)
+[2025-06-26T18:34:32.567+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 106.0 in stage 0.0 (TID 106). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.568+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 111.0 in stage 0.0 (TID 111) (localhost, executor driver, partition 111, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.569+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 112.0 in stage 0.0 (TID 112) (localhost, executor driver, partition 112, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.569+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 112.0 in stage 0.0 (TID 112)
+[2025-06-26T18:34:32.570+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 107.0 in stage 0.0 (TID 107). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.570+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 113.0 in stage 0.0 (TID 113) (localhost, executor driver, partition 113, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.570+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 111.0 in stage 0.0 (TID 111)
+[2025-06-26T18:34:32.570+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 88.0 in stage 0.0 (TID 88) in 68 ms on localhost (executor driver) (88/149)
+[2025-06-26T18:34:32.578+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 113.0 in stage 0.0 (TID 113)
+[2025-06-26T18:34:32.581+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 114.0 in stage 0.0 (TID 114) (localhost, executor driver, partition 114, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.581+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 91.0 in stage 0.0 (TID 91) in 77 ms on localhost (executor driver) (89/149)
+[2025-06-26T18:34:32.582+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 93.0 in stage 0.0 (TID 93) in 75 ms on localhost (executor driver) (90/149)
+[2025-06-26T18:34:32.583+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 90.0 in stage 0.0 (TID 90) in 78 ms on localhost (executor driver) (91/149)
+[2025-06-26T18:34:32.583+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 87.0 in stage 0.0 (TID 87) in 85 ms on localhost (executor driver) (92/149)
+[2025-06-26T18:34:32.585+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 114.0 in stage 0.0 (TID 114)
+[2025-06-26T18:34:32.586+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 115.0 in stage 0.0 (TID 115) (localhost, executor driver, partition 115, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.586+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 115.0 in stage 0.0 (TID 115)
+[2025-06-26T18:34:32.586+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 116.0 in stage 0.0 (TID 116) (localhost, executor driver, partition 116, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.587+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 108.0 in stage 0.0 (TID 108). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.587+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 110.0 in stage 0.0 (TID 110). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.587+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 89.0 in stage 0.0 (TID 89) in 83 ms on localhost (executor driver) (93/149)
+[2025-06-26T18:34:32.587+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 92.0 in stage 0.0 (TID 92) in 81 ms on localhost (executor driver) (94/149)
+[2025-06-26T18:34:32.587+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 109.0 in stage 0.0 (TID 109). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.587+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 112.0 in stage 0.0 (TID 112). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.588+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 94.0 in stage 0.0 (TID 94) in 79 ms on localhost (executor driver) (95/149)
+[2025-06-26T18:34:32.588+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 113.0 in stage 0.0 (TID 113). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.588+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 116.0 in stage 0.0 (TID 116)
+[2025-06-26T18:34:32.589+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 117.0 in stage 0.0 (TID 117) (localhost, executor driver, partition 117, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.589+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 117.0 in stage 0.0 (TID 117)
+[2025-06-26T18:34:32.590+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 118.0 in stage 0.0 (TID 118) (localhost, executor driver, partition 118, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.590+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 96.0 in stage 0.0 (TID 96) in 75 ms on localhost (executor driver) (96/149)
+[2025-06-26T18:34:32.590+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 118.0 in stage 0.0 (TID 118)
+[2025-06-26T18:34:32.590+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 95.0 in stage 0.0 (TID 95) in 78 ms on localhost (executor driver) (97/149)
+[2025-06-26T18:34:32.593+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 119.0 in stage 0.0 (TID 119) (localhost, executor driver, partition 119, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.594+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 119.0 in stage 0.0 (TID 119)
+[2025-06-26T18:34:32.594+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 120.0 in stage 0.0 (TID 120) (localhost, executor driver, partition 120, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.595+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 98.0 in stage 0.0 (TID 98) in 71 ms on localhost (executor driver) (98/149)
+[2025-06-26T18:34:32.595+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 97.0 in stage 0.0 (TID 97) in 75 ms on localhost (executor driver) (99/149)
+[2025-06-26T18:34:32.596+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 121.0 in stage 0.0 (TID 121) (localhost, executor driver, partition 121, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.596+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 121.0 in stage 0.0 (TID 121)
+[2025-06-26T18:34:32.596+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 114.0 in stage 0.0 (TID 114). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.597+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 111.0 in stage 0.0 (TID 111). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.598+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 120.0 in stage 0.0 (TID 120)
+[2025-06-26T18:34:32.598+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 122.0 in stage 0.0 (TID 122) (localhost, executor driver, partition 122, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.599+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 122.0 in stage 0.0 (TID 122)
+[2025-06-26T18:34:32.600+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 123.0 in stage 0.0 (TID 123) (localhost, executor driver, partition 123, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.600+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 115.0 in stage 0.0 (TID 115). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.601+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 124.0 in stage 0.0 (TID 124) (localhost, executor driver, partition 124, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.601+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 118.0 in stage 0.0 (TID 118). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.601+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 117.0 in stage 0.0 (TID 117). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.602+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 102.0 in stage 0.0 (TID 102) in 67 ms on localhost (executor driver) (100/149)
+[2025-06-26T18:34:32.602+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 124.0 in stage 0.0 (TID 124)
+[2025-06-26T18:34:32.602+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 123.0 in stage 0.0 (TID 123)
+[2025-06-26T18:34:32.603+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 125.0 in stage 0.0 (TID 125) (localhost, executor driver, partition 125, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.603+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 125.0 in stage 0.0 (TID 125)
+[2025-06-26T18:34:32.604+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 103.0 in stage 0.0 (TID 103) in 68 ms on localhost (executor driver) (101/149)
+[2025-06-26T18:34:32.604+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 119.0 in stage 0.0 (TID 119). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.604+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 99.0 in stage 0.0 (TID 99) in 78 ms on localhost (executor driver) (102/149)
+[2025-06-26T18:34:32.605+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 116.0 in stage 0.0 (TID 116). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.606+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 126.0 in stage 0.0 (TID 126) (localhost, executor driver, partition 126, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.606+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 100.0 in stage 0.0 (TID 100) in 75 ms on localhost (executor driver) (103/149)
+[2025-06-26T18:34:32.607+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 101.0 in stage 0.0 (TID 101) in 74 ms on localhost (executor driver) (104/149)
+[2025-06-26T18:34:32.609+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 126.0 in stage 0.0 (TID 126)
+[2025-06-26T18:34:32.609+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 121.0 in stage 0.0 (TID 121). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.609+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 127.0 in stage 0.0 (TID 127) (localhost, executor driver, partition 127, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.609+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 122.0 in stage 0.0 (TID 122). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.610+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 104.0 in stage 0.0 (TID 104) in 73 ms on localhost (executor driver) (105/149)
+[2025-06-26T18:34:32.611+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 127.0 in stage 0.0 (TID 127)
+[2025-06-26T18:34:32.611+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 128.0 in stage 0.0 (TID 128) (localhost, executor driver, partition 128, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.612+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 128.0 in stage 0.0 (TID 128)
+[2025-06-26T18:34:32.612+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 120.0 in stage 0.0 (TID 120). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.613+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 129.0 in stage 0.0 (TID 129) (localhost, executor driver, partition 129, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.614+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 105.0 in stage 0.0 (TID 105) in 76 ms on localhost (executor driver) (106/149)
+[2025-06-26T18:34:32.614+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 123.0 in stage 0.0 (TID 123). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.614+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 124.0 in stage 0.0 (TID 124). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.614+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 129.0 in stage 0.0 (TID 129)
+[2025-06-26T18:34:32.614+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 125.0 in stage 0.0 (TID 125). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.614+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 106.0 in stage 0.0 (TID 106) in 71 ms on localhost (executor driver) (107/149)
+[2025-06-26T18:34:32.615+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 130.0 in stage 0.0 (TID 130) (localhost, executor driver, partition 130, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.616+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 107.0 in stage 0.0 (TID 107) in 65 ms on localhost (executor driver) (108/149)
+[2025-06-26T18:34:32.617+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 130.0 in stage 0.0 (TID 130)
+[2025-06-26T18:34:32.618+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 108.0 in stage 0.0 (TID 108) in 56 ms on localhost (executor driver) (109/149)
+[2025-06-26T18:34:32.620+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 131.0 in stage 0.0 (TID 131) (localhost, executor driver, partition 131, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.621+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 110.0 in stage 0.0 (TID 110) in 56 ms on localhost (executor driver) (110/149)
+[2025-06-26T18:34:32.622+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 131.0 in stage 0.0 (TID 131)
+[2025-06-26T18:34:32.624+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 132.0 in stage 0.0 (TID 132) (localhost, executor driver, partition 132, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.625+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 126.0 in stage 0.0 (TID 126). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.625+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 128.0 in stage 0.0 (TID 128). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.625+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 132.0 in stage 0.0 (TID 132)
+[2025-06-26T18:34:32.625+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 127.0 in stage 0.0 (TID 127). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.625+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 109.0 in stage 0.0 (TID 109) in 60 ms on localhost (executor driver) (111/149)
+[2025-06-26T18:34:32.626+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 133.0 in stage 0.0 (TID 133) (localhost, executor driver, partition 133, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.626+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 129.0 in stage 0.0 (TID 129). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.626+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 133.0 in stage 0.0 (TID 133)
+[2025-06-26T18:34:32.627+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 134.0 in stage 0.0 (TID 134) (localhost, executor driver, partition 134, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.628+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 112.0 in stage 0.0 (TID 112) in 59 ms on localhost (executor driver) (112/149)
+[2025-06-26T18:34:32.628+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 134.0 in stage 0.0 (TID 134)
+[2025-06-26T18:34:32.628+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 113.0 in stage 0.0 (TID 113) in 59 ms on localhost (executor driver) (113/149)
+[2025-06-26T18:34:32.630+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 135.0 in stage 0.0 (TID 135) (localhost, executor driver, partition 135, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.630+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 130.0 in stage 0.0 (TID 130). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.631+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 111.0 in stage 0.0 (TID 111) in 63 ms on localhost (executor driver) (114/149)
+[2025-06-26T18:34:32.631+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 135.0 in stage 0.0 (TID 135)
+[2025-06-26T18:34:32.631+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 136.0 in stage 0.0 (TID 136) (localhost, executor driver, partition 136, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.633+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 136.0 in stage 0.0 (TID 136)
+[2025-06-26T18:34:32.633+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 137.0 in stage 0.0 (TID 137) (localhost, executor driver, partition 137, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.634+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 137.0 in stage 0.0 (TID 137)
+[2025-06-26T18:34:32.634+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 138.0 in stage 0.0 (TID 138) (localhost, executor driver, partition 138, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.636+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 138.0 in stage 0.0 (TID 138)
+[2025-06-26T18:34:32.636+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 139.0 in stage 0.0 (TID 139) (localhost, executor driver, partition 139, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.637+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 131.0 in stage 0.0 (TID 131). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.637+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 132.0 in stage 0.0 (TID 132). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.637+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 114.0 in stage 0.0 (TID 114) in 56 ms on localhost (executor driver) (115/149)
+[2025-06-26T18:34:32.637+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 139.0 in stage 0.0 (TID 139)
+[2025-06-26T18:34:32.637+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 140.0 in stage 0.0 (TID 140) (localhost, executor driver, partition 140, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.637+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 140.0 in stage 0.0 (TID 140)
+[2025-06-26T18:34:32.637+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 141.0 in stage 0.0 (TID 141) (localhost, executor driver, partition 141, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.645+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 141.0 in stage 0.0 (TID 141)
+[2025-06-26T18:34:32.646+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 115.0 in stage 0.0 (TID 115) in 61 ms on localhost (executor driver) (116/149)
+[2025-06-26T18:34:32.648+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 117.0 in stage 0.0 (TID 117) in 59 ms on localhost (executor driver) (117/149)
+[2025-06-26T18:34:32.648+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 133.0 in stage 0.0 (TID 133). 3261 bytes result sent to driver
+[2025-06-26T18:34:32.649+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 134.0 in stage 0.0 (TID 134). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.651+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 116.0 in stage 0.0 (TID 116) in 65 ms on localhost (executor driver) (118/149)
+[2025-06-26T18:34:32.652+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 135.0 in stage 0.0 (TID 135). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.653+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 119.0 in stage 0.0 (TID 119) in 60 ms on localhost (executor driver) (119/149)
+[2025-06-26T18:34:32.656+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 142.0 in stage 0.0 (TID 142) (localhost, executor driver, partition 142, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.657+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 137.0 in stage 0.0 (TID 137). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.657+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 118.0 in stage 0.0 (TID 118) in 68 ms on localhost (executor driver) (120/149)
+[2025-06-26T18:34:32.657+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 142.0 in stage 0.0 (TID 142)
+[2025-06-26T18:34:32.659+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 138.0 in stage 0.0 (TID 138). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.660+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 143.0 in stage 0.0 (TID 143) (localhost, executor driver, partition 143, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.660+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 139.0 in stage 0.0 (TID 139). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.660+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 141.0 in stage 0.0 (TID 141). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.661+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 143.0 in stage 0.0 (TID 143)
+[2025-06-26T18:34:32.663+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 144.0 in stage 0.0 (TID 144) (localhost, executor driver, partition 144, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.663+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 121.0 in stage 0.0 (TID 121) in 67 ms on localhost (executor driver) (121/149)
+[2025-06-26T18:34:32.664+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 144.0 in stage 0.0 (TID 144)
+[2025-06-26T18:34:32.665+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 122.0 in stage 0.0 (TID 122) in 67 ms on localhost (executor driver) (122/149)
+[2025-06-26T18:34:32.666+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 120.0 in stage 0.0 (TID 120) in 71 ms on localhost (executor driver) (123/149)
+[2025-06-26T18:34:32.666+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 136.0 in stage 0.0 (TID 136). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.667+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 140.0 in stage 0.0 (TID 140). 3218 bytes result sent to driver
+[2025-06-26T18:34:32.667+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 145.0 in stage 0.0 (TID 145) (localhost, executor driver, partition 145, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.667+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 145.0 in stage 0.0 (TID 145)
+[2025-06-26T18:34:32.674+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 146.0 in stage 0.0 (TID 146) (localhost, executor driver, partition 146, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.676+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 147.0 in stage 0.0 (TID 147) (localhost, executor driver, partition 147, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.677+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 146.0 in stage 0.0 (TID 146)
+[2025-06-26T18:34:32.677+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 123.0 in stage 0.0 (TID 123) in 77 ms on localhost (executor driver) (124/149)
+[2025-06-26T18:34:32.677+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 124.0 in stage 0.0 (TID 124) in 77 ms on localhost (executor driver) (125/149)
+[2025-06-26T18:34:32.678+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 147.0 in stage 0.0 (TID 147)
+[2025-06-26T18:34:32.682+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Starting task 148.0 in stage 0.0 (TID 148) (localhost, executor driver, partition 148, PROCESS_LOCAL, 9215 bytes)
+[2025-06-26T18:34:32.683+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Running task 148.0 in stage 0.0 (TID 148)
+[2025-06-26T18:34:32.683+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 142.0 in stage 0.0 (TID 142). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.684+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 144.0 in stage 0.0 (TID 144). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.686+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 143.0 in stage 0.0 (TID 143). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.686+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 145.0 in stage 0.0 (TID 145). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.688+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 125.0 in stage 0.0 (TID 125) in 85 ms on localhost (executor driver) (126/149)
+[2025-06-26T18:34:32.689+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 126.0 in stage 0.0 (TID 126) in 83 ms on localhost (executor driver) (127/149)
+[2025-06-26T18:34:32.690+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 128.0 in stage 0.0 (TID 128) in 80 ms on localhost (executor driver) (128/149)
+[2025-06-26T18:34:32.690+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 129.0 in stage 0.0 (TID 129) in 78 ms on localhost (executor driver) (129/149)
+[2025-06-26T18:34:32.690+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 130.0 in stage 0.0 (TID 130) in 75 ms on localhost (executor driver) (130/149)
+[2025-06-26T18:34:32.691+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 127.0 in stage 0.0 (TID 127) in 82 ms on localhost (executor driver) (131/149)
+[2025-06-26T18:34:32.691+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 147.0 in stage 0.0 (TID 147). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.692+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 146.0 in stage 0.0 (TID 146). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.693+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO Executor: Finished task 148.0 in stage 0.0 (TID 148). 3175 bytes result sent to driver
+[2025-06-26T18:34:32.694+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 133.0 in stage 0.0 (TID 133) in 69 ms on localhost (executor driver) (132/149)
+[2025-06-26T18:34:32.695+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 134.0 in stage 0.0 (TID 134) in 67 ms on localhost (executor driver) (133/149)
+[2025-06-26T18:34:32.696+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 131.0 in stage 0.0 (TID 131) in 76 ms on localhost (executor driver) (134/149)
+[2025-06-26T18:34:32.697+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 132.0 in stage 0.0 (TID 132) in 74 ms on localhost (executor driver) (135/149)
+[2025-06-26T18:34:32.698+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 135.0 in stage 0.0 (TID 135) in 69 ms on localhost (executor driver) (136/149)
+[2025-06-26T18:34:32.699+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 138.0 in stage 0.0 (TID 138) in 65 ms on localhost (executor driver) (137/149)
+[2025-06-26T18:34:32.699+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 139.0 in stage 0.0 (TID 139) in 65 ms on localhost (executor driver) (138/149)
+[2025-06-26T18:34:32.699+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 137.0 in stage 0.0 (TID 137) in 67 ms on localhost (executor driver) (139/149)
+[2025-06-26T18:34:32.700+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 136.0 in stage 0.0 (TID 136) in 68 ms on localhost (executor driver) (140/149)
+[2025-06-26T18:34:32.700+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 140.0 in stage 0.0 (TID 140) in 63 ms on localhost (executor driver) (141/149)
+[2025-06-26T18:34:32.700+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 144.0 in stage 0.0 (TID 144) in 39 ms on localhost (executor driver) (142/149)
+[2025-06-26T18:34:32.700+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 143.0 in stage 0.0 (TID 143) in 42 ms on localhost (executor driver) (143/149)
+[2025-06-26T18:34:32.701+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 141.0 in stage 0.0 (TID 141) in 63 ms on localhost (executor driver) (144/149)
+[2025-06-26T18:34:32.701+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 142.0 in stage 0.0 (TID 142) in 46 ms on localhost (executor driver) (145/149)
+[2025-06-26T18:34:32.702+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 145.0 in stage 0.0 (TID 145) in 36 ms on localhost (executor driver) (146/149)
+[2025-06-26T18:34:32.702+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 148.0 in stage 0.0 (TID 148) in 22 ms on localhost (executor driver) (147/149)
+[2025-06-26T18:34:32.702+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 146.0 in stage 0.0 (TID 146) in 29 ms on localhost (executor driver) (148/149)
+[2025-06-26T18:34:32.703+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSetManager: Finished task 147.0 in stage 0.0 (TID 147) in 27 ms on localhost (executor driver) (149/149)
+[2025-06-26T18:34:32.703+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO DAGScheduler: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0) finished in 1.156 s
+[2025-06-26T18:34:32.704+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool
+[2025-06-26T18:34:32.707+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+[2025-06-26T18:34:32.707+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+[2025-06-26T18:34:32.710+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO DAGScheduler: Job 0 finished: csv at NativeMethodAccessorImpl.java:0, took 1.215522 s
+[2025-06-26T18:34:32.739+0700] {subprocess.py:93} INFO - 25/06/26 18:34:32 INFO InMemoryFileIndex: It took 1654 ms to list leaf files for 149 paths.
+[2025-06-26T18:34:34.805+0700] {subprocess.py:93} INFO - 25/06/26 18:34:34 INFO FileSourceStrategy: Pushed Filters:
+[2025-06-26T18:34:34.808+0700] {subprocess.py:93} INFO - 25/06/26 18:34:34 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#0, None)) > 0)
+[2025-06-26T18:34:35.188+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO CodeGenerator: Code generated in 214.412615 ms
+[2025-06-26T18:34:35.199+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 199.4 KiB, free 434.1 MiB)
+[2025-06-26T18:34:35.208+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 34.7 KiB, free 434.0 MiB)
+[2025-06-26T18:34:35.209+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:44043 (size: 34.7 KiB, free: 434.3 MiB)
+[2025-06-26T18:34:35.210+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO SparkContext: Created broadcast 1 from csv at NativeMethodAccessorImpl.java:0
+[2025-06-26T18:34:35.228+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO FileSourceScanExec: Planning scan with bin packing, max size: 28408422 bytes, open cost is considered as scanning 4194304 bytes.
+[2025-06-26T18:34:35.281+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+[2025-06-26T18:34:35.283+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: Got job 1 (csv at NativeMethodAccessorImpl.java:0) with 1 output partitions
+[2025-06-26T18:34:35.283+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: Final stage: ResultStage 1 (csv at NativeMethodAccessorImpl.java:0)
+[2025-06-26T18:34:35.283+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: Parents of final stage: List()
+[2025-06-26T18:34:35.285+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: Missing parents: List()
+[2025-06-26T18:34:35.285+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[5] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+[2025-06-26T18:34:35.320+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 13.5 KiB, free 434.0 MiB)
+[2025-06-26T18:34:35.323+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 6.4 KiB, free 434.0 MiB)
+[2025-06-26T18:34:35.324+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on localhost:44043 (size: 6.4 KiB, free: 434.3 MiB)
+[2025-06-26T18:34:35.324+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1585
+[2025-06-26T18:34:35.325+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[5] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+[2025-06-26T18:34:35.325+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+[2025-06-26T18:34:35.335+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 149) (localhost, executor driver, partition 0, ANY, 10597 bytes)
+[2025-06-26T18:34:35.336+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO Executor: Running task 0.0 in stage 1.0 (TID 149)
+[2025-06-26T18:34:35.420+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO CodeGenerator: Code generated in 20.851939 ms
+[2025-06-26T18:34:35.426+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-bb8e9023-9b02-4175-a80b-0bcd66f220bf-c000.csv, range: 0-1152, partition values: [empty row]
+[2025-06-26T18:34:35.448+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO CodeGenerator: Code generated in 15.073556 ms
+[2025-06-26T18:34:35.500+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO Executor: Finished task 0.0 in stage 1.0 (TID 149). 1710 bytes result sent to driver
+[2025-06-26T18:34:35.502+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 149) in 171 ms on localhost (executor driver) (1/1)
+[2025-06-26T18:34:35.502+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool
+[2025-06-26T18:34:35.503+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: ResultStage 1 (csv at NativeMethodAccessorImpl.java:0) finished in 0.212 s
+[2025-06-26T18:34:35.503+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+[2025-06-26T18:34:35.503+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+[2025-06-26T18:34:35.503+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: Job 1 finished: csv at NativeMethodAccessorImpl.java:0, took 0.221965 s
+[2025-06-26T18:34:35.526+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO CodeGenerator: Code generated in 10.092718 ms
+[2025-06-26T18:34:35.576+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO FileSourceStrategy: Pushed Filters:
+[2025-06-26T18:34:35.576+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO FileSourceStrategy: Post-Scan Filters:
+[2025-06-26T18:34:35.586+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 199.4 KiB, free 433.8 MiB)
+[2025-06-26T18:34:35.599+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 34.7 KiB, free 433.8 MiB)
+[2025-06-26T18:34:35.599+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on localhost:44043 (size: 34.7 KiB, free: 434.3 MiB)
+[2025-06-26T18:34:35.600+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO SparkContext: Created broadcast 3 from csv at NativeMethodAccessorImpl.java:0
+[2025-06-26T18:34:35.605+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO FileSourceScanExec: Planning scan with bin packing, max size: 28408422 bytes, open cost is considered as scanning 4194304 bytes.
+[2025-06-26T18:34:35.761+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO FileSourceStrategy: Pushed Filters:
+[2025-06-26T18:34:35.762+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO FileSourceStrategy: Post-Scan Filters:
+[2025-06-26T18:34:35.820+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2025-06-26T18:34:35.820+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[2025-06-26T18:34:35.821+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+[2025-06-26T18:34:35.834+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 199.3 KiB, free 433.6 MiB)
+[2025-06-26T18:34:35.843+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 34.7 KiB, free 433.6 MiB)
+[2025-06-26T18:34:35.843+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on localhost:44043 (size: 34.7 KiB, free: 434.3 MiB)
+[2025-06-26T18:34:35.844+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO SparkContext: Created broadcast 4 from csv at NativeMethodAccessorImpl.java:0
+[2025-06-26T18:34:35.851+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO FileSourceScanExec: Planning scan with bin packing, max size: 28408422 bytes, open cost is considered as scanning 4194304 bytes.
+[2025-06-26T18:34:35.919+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+[2025-06-26T18:34:35.922+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: Got job 2 (csv at NativeMethodAccessorImpl.java:0) with 1 output partitions
+[2025-06-26T18:34:35.923+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: Final stage: ResultStage 2 (csv at NativeMethodAccessorImpl.java:0)
+[2025-06-26T18:34:35.923+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: Parents of final stage: List()
+[2025-06-26T18:34:35.924+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: Missing parents: List()
+[2025-06-26T18:34:35.925+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[15] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+[2025-06-26T18:34:35.962+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 214.5 KiB, free 433.3 MiB)
+[2025-06-26T18:34:35.964+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 77.6 KiB, free 433.3 MiB)
+[2025-06-26T18:34:35.965+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on localhost:44043 (size: 77.6 KiB, free: 434.2 MiB)
+[2025-06-26T18:34:35.966+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1585
+[2025-06-26T18:34:35.966+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[15] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+[2025-06-26T18:34:35.967+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+[2025-06-26T18:34:35.971+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 150) (localhost, executor driver, partition 0, PROCESS_LOCAL, 33482 bytes)
+[2025-06-26T18:34:35.972+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on localhost:44043 in memory (size: 34.7 KiB, free: 434.2 MiB)
+[2025-06-26T18:34:35.972+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO Executor: Running task 0.0 in stage 2.0 (TID 150)
+[2025-06-26T18:34:35.980+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO BlockManagerInfo: Removed broadcast_2_piece0 on localhost:44043 in memory (size: 6.4 KiB, free: 434.2 MiB)
+[2025-06-26T18:34:35.984+0700] {subprocess.py:93} INFO - 25/06/26 18:34:35 INFO BlockManagerInfo: Removed broadcast_3_piece0 on localhost:44043 in memory (size: 34.7 KiB, free: 434.3 MiB)
+[2025-06-26T18:34:36.003+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2025-06-26T18:34:36.003+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[2025-06-26T18:34:36.004+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+[2025-06-26T18:34:36.068+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-bb8e9023-9b02-4175-a80b-0bcd66f220bf-c000.csv, range: 0-1152, partition values: [empty row]
+[2025-06-26T18:34:36.120+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO CodeGenerator: Code generated in 36.983743 ms
+[2025-06-26T18:34:36.169+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-71db78a4-5a68-4e86-ab52-811799d8429d-c000.csv, range: 0-429, partition values: [empty row]
+[2025-06-26T18:34:36.179+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-9aee29ce-a6fd-4a22-88ef-fd7a0382a227-c000.csv, range: 0-342, partition values: [empty row]
+[2025-06-26T18:34:36.188+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-be6fad05-ab52-4aa0-8f08-43fd8488a39d-c000.csv, range: 0-338, partition values: [empty row]
+[2025-06-26T18:34:36.197+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-5e03b1cd-b2cc-41d5-be0f-4a5fe9f896f0-c000.csv, range: 0-322, partition values: [empty row]
+[2025-06-26T18:34:36.205+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-b9dea8c0-fb93-4330-baf2-e73a8e287a22-c000.csv, range: 0-321, partition values: [empty row]
+[2025-06-26T18:34:36.213+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-5ed46380-fcc7-418b-a7a3-3f5936b96fbc-c000.csv, range: 0-319, partition values: [empty row]
+[2025-06-26T18:34:36.221+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-ca9034ad-7669-4158-a759-f097cb8deb3f-c000.csv, range: 0-311, partition values: [empty row]
+[2025-06-26T18:34:36.228+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-474f48ba-13f5-4383-93fd-a77bb6a4b1f5-c000.csv, range: 0-310, partition values: [empty row]
+[2025-06-26T18:34:36.236+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-38fd75f6-c232-4eeb-9dce-b2f4a5f6e5db-c000.csv, range: 0-310, partition values: [empty row]
+[2025-06-26T18:34:36.243+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-72165a9c-4961-40a4-83cb-4f0258bc522f-c000.csv, range: 0-309, partition values: [empty row]
+[2025-06-26T18:34:36.251+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-150e5379-06b5-4b03-a196-24ec729b8572-c000.csv, range: 0-307, partition values: [empty row]
+[2025-06-26T18:34:36.260+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-0bc58f52-1a6e-429b-81da-9478df734bfd-c000.csv, range: 0-239, partition values: [empty row]
+[2025-06-26T18:34:36.268+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-5a07d03c-cf46-4ebe-b060-bf51c9530abf-c000.csv, range: 0-233, partition values: [empty row]
+[2025-06-26T18:34:36.274+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-d000b47e-92cc-43f9-a215-1d514670c6a9-c000.csv, range: 0-231, partition values: [empty row]
+[2025-06-26T18:34:36.283+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-21198183-7f06-4551-9025-400830d0ea39-c000.csv, range: 0-231, partition values: [empty row]
+[2025-06-26T18:34:36.292+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-90194e85-5c02-4b52-ab3b-fdb13bf86a7e-c000.csv, range: 0-229, partition values: [empty row]
+[2025-06-26T18:34:36.303+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-abb1ba73-591d-4392-b8f3-bdc77f6411f6-c000.csv, range: 0-229, partition values: [empty row]
+[2025-06-26T18:34:36.313+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-c51e20ee-4ffd-4949-ae7a-4ece5ae12120-c000.csv, range: 0-229, partition values: [empty row]
+[2025-06-26T18:34:36.320+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-3afc7dbe-4184-48e6-8adb-ee1e16317d38-c000.csv, range: 0-228, partition values: [empty row]
+[2025-06-26T18:34:36.328+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-48ec54eb-9275-4c64-8008-84d2f624a0fa-c000.csv, range: 0-226, partition values: [empty row]
+[2025-06-26T18:34:36.355+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-a83c2633-624c-47aa-896a-8f746220a766-c000.csv, range: 0-226, partition values: [empty row]
+[2025-06-26T18:34:36.365+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-6e28e94a-d18a-40fd-a91d-68d6c91fa055-c000.csv, range: 0-226, partition values: [empty row]
+[2025-06-26T18:34:36.375+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-3150bda4-04f1-4f83-9b20-c6da8268da58-c000.csv, range: 0-226, partition values: [empty row]
+[2025-06-26T18:34:36.392+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO BlockManagerInfo: Removed broadcast_0_piece0 on localhost:44043 in memory (size: 37.3 KiB, free: 434.3 MiB)
+[2025-06-26T18:34:36.398+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-43464d62-b717-498d-aa53-b23eb692d32d-c000.csv, range: 0-226, partition values: [empty row]
+[2025-06-26T18:34:36.407+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-7b04784d-29d9-4437-8131-b4f008f9be84-c000.csv, range: 0-224, partition values: [empty row]
+[2025-06-26T18:34:36.414+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-3c5c9fd4-69e5-4f94-a821-c190f1f5a028-c000.csv, range: 0-220, partition values: [empty row]
+[2025-06-26T18:34:36.420+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-124824e0-3157-4f8a-b4ef-aebe66aff09c-c000.csv, range: 0-219, partition values: [empty row]
+[2025-06-26T18:34:36.428+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-9405b26a-aa47-40ee-a4e4-1b515c99528a-c000.csv, range: 0-218, partition values: [empty row]
+[2025-06-26T18:34:36.435+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-e30dc47b-6c8b-43e7-a586-b825e527ebc5-c000.csv, range: 0-218, partition values: [empty row]
+[2025-06-26T18:34:36.439+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-99a5bce4-e582-4b0b-a84f-663a5a172865-c000.csv, range: 0-218, partition values: [empty row]
+[2025-06-26T18:34:36.444+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-9631e621-5bc9-4f4c-a933-7c204a68c462-c000.csv, range: 0-217, partition values: [empty row]
+[2025-06-26T18:34:36.448+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-fe928ec2-1ca2-4cc7-8857-6f2ca9e72e39-c000.csv, range: 0-217, partition values: [empty row]
+[2025-06-26T18:34:36.453+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-6cd36271-e040-4b33-a146-19133b79026f-c000.csv, range: 0-217, partition values: [empty row]
+[2025-06-26T18:34:36.457+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-bcc6d3dd-97e3-49ff-b556-dbb515c54b10-c000.csv, range: 0-216, partition values: [empty row]
+[2025-06-26T18:34:36.463+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-29bed7dc-3bdb-409b-943c-f3afc3340e3d-c000.csv, range: 0-216, partition values: [empty row]
+[2025-06-26T18:34:36.469+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-963065d3-330e-43ac-bb7b-64e6643be4d2-c000.csv, range: 0-216, partition values: [empty row]
+[2025-06-26T18:34:36.473+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-631ee841-3437-4f15-b203-02ba83392391-c000.csv, range: 0-216, partition values: [empty row]
+[2025-06-26T18:34:36.493+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-99352b89-3d7a-488b-92a1-509f7f011567-c000.csv, range: 0-216, partition values: [empty row]
+[2025-06-26T18:34:36.501+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-b96a67bd-6f3b-4301-8f8f-e389be4d7d2d-c000.csv, range: 0-215, partition values: [empty row]
+[2025-06-26T18:34:36.506+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-514f1159-8df1-458c-b627-e079657cee3d-c000.csv, range: 0-215, partition values: [empty row]
+[2025-06-26T18:34:36.513+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-9dea5d2d-f272-4714-9ad2-9ba2890ae537-c000.csv, range: 0-215, partition values: [empty row]
+[2025-06-26T18:34:36.550+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-fc490b22-cd85-4645-b259-81a344f656eb-c000.csv, range: 0-215, partition values: [empty row]
+[2025-06-26T18:34:36.559+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-0a6e0aee-cc4b-4502-b360-b7fd1c0d28ef-c000.csv, range: 0-215, partition values: [empty row]
+[2025-06-26T18:34:36.565+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-2505f243-eaec-445e-a812-23ac922a22c4-c000.csv, range: 0-214, partition values: [empty row]
+[2025-06-26T18:34:36.571+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-7ab40a4a-21ef-4246-be5b-14a8527f7db9-c000.csv, range: 0-214, partition values: [empty row]
+[2025-06-26T18:34:36.576+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-4e5b5917-cbce-4a6b-923c-1ec917856d90-c000.csv, range: 0-214, partition values: [empty row]
+[2025-06-26T18:34:36.581+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-ac1653e4-e687-4c14-aab1-b992a79d1523-c000.csv, range: 0-214, partition values: [empty row]
+[2025-06-26T18:34:36.586+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-a11c5e7d-28de-4314-af95-12b9551419c7-c000.csv, range: 0-214, partition values: [empty row]
+[2025-06-26T18:34:36.591+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-eb354591-684c-443d-879d-3376afd57f0a-c000.csv, range: 0-214, partition values: [empty row]
+[2025-06-26T18:34:36.597+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-69ec63e0-3fa0-431d-84b6-99e91b4f2b10-c000.csv, range: 0-214, partition values: [empty row]
+[2025-06-26T18:34:36.603+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-e92ceb70-236d-462a-86b4-24c600299db3-c000.csv, range: 0-214, partition values: [empty row]
+[2025-06-26T18:34:36.609+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-a7313b84-e18f-4210-b2a6-7a3978a21ca8-c000.csv, range: 0-214, partition values: [empty row]
+[2025-06-26T18:34:36.633+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-cc512a14-400b-4552-ac46-c0cb4e409c3a-c000.csv, range: 0-214, partition values: [empty row]
+[2025-06-26T18:34:36.642+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-0350f0e5-ad33-4abe-aa50-2a362584824e-c000.csv, range: 0-213, partition values: [empty row]
+[2025-06-26T18:34:36.651+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-4ac2fa79-f7bf-4e6b-988b-8fa6bfba953b-c000.csv, range: 0-213, partition values: [empty row]
+[2025-06-26T18:34:36.672+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-b369c9d7-311b-47c0-a50b-64c9273daae4-c000.csv, range: 0-213, partition values: [empty row]
+[2025-06-26T18:34:36.681+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-e186bb69-d627-480d-a0fe-114c964307dc-c000.csv, range: 0-213, partition values: [empty row]
+[2025-06-26T18:34:36.688+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-b78199b3-bb0e-463e-8333-4e78afa38288-c000.csv, range: 0-213, partition values: [empty row]
+[2025-06-26T18:34:36.694+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-dba2848e-7cf2-4672-a1dc-e13ec42904f9-c000.csv, range: 0-213, partition values: [empty row]
+[2025-06-26T18:34:36.702+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-1983e3b7-c88e-4669-a5f2-f43de680316c-c000.csv, range: 0-213, partition values: [empty row]
+[2025-06-26T18:34:36.709+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-96c53742-efe0-4cfa-ba03-2065efdaec2d-c000.csv, range: 0-213, partition values: [empty row]
+[2025-06-26T18:34:36.715+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-0b5be15c-ea30-4165-a037-75f0072782d3-c000.csv, range: 0-213, partition values: [empty row]
+[2025-06-26T18:34:36.721+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-d9593980-e307-4f99-83c5-7d61fe49a51b-c000.csv, range: 0-213, partition values: [empty row]
+[2025-06-26T18:34:36.726+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-8655a41e-ddba-480c-8a8a-c56164c7bfbf-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.732+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-aa7b7aa4-3f53-4ee7-85f7-e28d4c130ba5-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.754+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-15213935-038c-43a2-938a-289c7b54c79e-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.765+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-589c938c-8989-4606-bedc-e63a7edd2318-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.772+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-49826da9-0fe0-401f-96eb-903092276f68-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.790+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-1176ced8-b439-4295-ba96-2cfb25a9371d-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.797+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-18a8c296-31d1-4d63-bbad-3c6f624d8137-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.803+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-bfb66d38-27fa-4500-8528-f2b9df3d992e-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.807+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-6c7ef1d8-8704-4daa-b565-b12d40490b07-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.812+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-78e70d82-f15e-4763-9d3b-90bb6cfa091e-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.818+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-e6e4fa10-febe-4047-bb09-07e8672783ab-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.824+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-3962b723-dfa8-4d17-b719-5990c14d8214-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.830+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-4e4975dc-6987-498e-96c7-dbf7de4720c8-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.852+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-e438ff00-022b-4498-8e04-a26dcf5814f6-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.860+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-f3823f66-31de-4e7a-9425-c00b468341cb-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.868+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-5f56fb88-8bab-4318-946a-5a4499c7a73a-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.886+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-c8afc343-e1c3-416f-af81-c5323b61f0e2-c000.csv, range: 0-212, partition values: [empty row]
+[2025-06-26T18:34:36.895+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-ddea7f8b-1391-43bb-b913-1f30408f9697-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:36.903+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-37a3a55c-2704-4bad-b6e7-0e4c86b1e3e8-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:36.909+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-eb809340-1352-4c1e-b854-64d8ff28d162-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:36.916+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-cf14b41f-1744-4460-8d7e-012665e747d8-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:36.935+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-cc151f07-6d86-47d7-8b69-a5bb8ce13b55-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:36.942+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-67bcc432-37d5-4437-a3bc-57d4e8645e60-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:36.949+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-72ab4cac-4986-41a8-9cc1-7795eefb4e2e-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:36.955+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-bc9dc71e-6a0c-442d-99bb-c4f1257f223d-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:36.974+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-92a391d6-04d9-4f68-8cb4-189e9f3326d1-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:36.983+0700] {subprocess.py:93} INFO - 25/06/26 18:34:36 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-952173cb-dab5-459c-acaf-9ce94acf9c8b-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:37.003+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-c43a9d0d-b1c1-44e1-8d95-abed01f8ef19-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:37.010+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-6c10d8fc-f2b4-4758-b397-4a958df45a52-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:37.018+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-7b211f84-86e4-42f4-a247-8a8243759264-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:37.036+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-5cc7371e-793d-4d96-ba99-162a108a141d-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:37.043+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-0420d1f0-adf3-43ca-b4dc-ced768f14cf1-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:37.049+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-ea342a33-47e0-4174-93ca-d07d7f3ae26e-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:37.068+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-9d57ef58-a0d1-4e2e-8875-3459afef8e84-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:37.076+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-a350e2fb-7194-4e9f-a3ce-bffe1ee3b3b1-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:37.082+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-8631ebdb-2015-4e7b-bc56-ca00fe8e4eed-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:37.104+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-847e9da7-65a5-4a09-9991-f7a3d24b3f55-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:37.113+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-76b1115d-338c-4672-a97a-a6babdf04f5d-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:37.132+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-7bf15bff-c0cf-4ec5-93ff-c85fcd2614ee-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:37.139+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-70c0b8d1-6c14-41b9-b266-ecc67fa43145-c000.csv, range: 0-211, partition values: [empty row]
+[2025-06-26T18:34:37.144+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-3978d575-97e5-4096-9883-dac5aa201568-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.151+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-392b327e-644f-4dd4-ab9f-ab239d10194b-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.168+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-ea9ea1cf-f75d-4d5f-8b32-d90960c2cb76-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.173+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-31e8d154-9bea-4f4a-b164-99f1f9375c61-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.187+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-c4158444-da64-4dfc-ac00-02adfd765f0a-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.193+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-3423b52a-f3de-4ffa-8afd-92eea3a6634d-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.198+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-cb8a2093-8b8a-46d3-8dd3-9c5075133a66-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.204+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-e2f3227a-803c-43c2-bc93-84fd8587433a-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.220+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-e857e8ff-48a3-415c-8a68-4f33a34d9b0f-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.227+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-d9d4e3d8-0a28-4a78-bc4c-c121603ec4d8-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.240+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-f41b7e61-5a91-4999-910c-401e9168154e-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.247+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-f9be1aad-d75e-4ada-9bbe-354110631eb6-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.253+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-f84a2a3d-9c4e-4911-b636-35cbfaa32d36-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.271+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-cb9c6d85-ac19-4483-81fd-7eca3f21cc70-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.279+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-adfa24a5-640e-4d8c-a1ce-1dd9336010cb-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.292+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-2929a25a-cb4c-46d5-bd42-fcaab9db0f68-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.300+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-4a66121d-bfdc-4512-872c-ef06d9cfb698-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.306+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-c93d7ed4-5087-499a-8082-a33cef9b5f50-c000.csv, range: 0-210, partition values: [empty row]
+[2025-06-26T18:34:37.313+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-e8b907bd-9eab-43a3-9173-93788c2d1762-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.329+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-e4c5df4c-b6a4-4105-9960-7e47791265ee-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.336+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-19114e04-95d2-4cff-8b21-fa7861ddbbb8-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.349+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-bb93e188-6872-4475-8aac-e38179a6161d-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.357+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-1bdf56a0-2000-472b-aac0-c2ec42c62f16-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.365+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-b1992501-cde5-4fd9-9e54-fa07b011a0b9-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.385+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-1d0b01b9-02d2-4b6d-8446-bd3ed14d67e8-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.393+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-0a6f1a75-f0c5-437a-b6bc-052493a44c2c-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.400+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-1e889392-de2e-4c30-b690-afb94566b656-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.413+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-7136042d-6c7a-4af6-aa01-8ef7cecced45-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.420+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-cc9eb846-5aed-433f-a6db-c2d1e0689182-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.426+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-e609ad2f-c330-4ac0-a992-583a46ed886d-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.434+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-006d4512-583f-4c2b-8bdc-15aa815cab41-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.450+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-a78ae5dd-5548-432e-b05b-a9ad7a5027c8-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.455+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-dd63d0e4-0e6a-4be7-9c41-14ac8852e9f5-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.467+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-fb84ef69-a4f5-4d7b-a081-ac4affc6407e-c000.csv, range: 0-209, partition values: [empty row]
+[2025-06-26T18:34:37.473+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-24762d2d-c7fd-45d5-a68f-a1c8a304aa02-c000.csv, range: 0-208, partition values: [empty row]
+[2025-06-26T18:34:37.479+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-6dc4315b-025b-4ebb-866e-b71d81d0b0dc-c000.csv, range: 0-208, partition values: [empty row]
+[2025-06-26T18:34:37.487+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-6908a66f-1db8-422f-9136-6cfdf5abaf57-c000.csv, range: 0-208, partition values: [empty row]
+[2025-06-26T18:34:37.504+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-e9c3989c-e20e-4476-b395-3adf75a339c7-c000.csv, range: 0-208, partition values: [empty row]
+[2025-06-26T18:34:37.511+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-4de0627f-3434-4c3c-830d-b6679f1879d3-c000.csv, range: 0-208, partition values: [empty row]
+[2025-06-26T18:34:37.524+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-22501b20-c052-4ea9-b362-add1bccb6ed3-c000.csv, range: 0-208, partition values: [empty row]
+[2025-06-26T18:34:37.530+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-a70c8c83-9f1b-4f02-a87f-833bb34740bf-c000.csv, range: 0-208, partition values: [empty row]
+[2025-06-26T18:34:37.536+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-13507cb6-64a2-4c3e-913b-c19c7e1b8c15-c000.csv, range: 0-208, partition values: [empty row]
+[2025-06-26T18:34:37.542+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-9bf78662-e993-4ae6-ad65-ca9cc07a185a-c000.csv, range: 0-207, partition values: [empty row]
+[2025-06-26T18:34:37.561+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-aee06a83-0e8a-466d-9e14-fb5ea2ca3383-c000.csv, range: 0-207, partition values: [empty row]
+[2025-06-26T18:34:37.575+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileScanRDD: Reading File path: hdfs://localhost:9000/transactions_by_hour/part-00000-2d238348-36fb-4850-9df8-1c686bad1e4a-c000.csv, range: 0-207, partition values: [empty row]
+[2025-06-26T18:34:37.674+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileOutputCommitter: Saved output of task 'attempt_202506261834352609242682759246386_0002_m_000000_150' to hdfs://localhost:9000/transactions_by_hour_compacted/_temporary/0/task_202506261834352609242682759246386_0002_m_000000
+[2025-06-26T18:34:37.675+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO SparkHadoopMapRedUtil: attempt_202506261834352609242682759246386_0002_m_000000_150: Committed. Elapsed time: 11 ms.
+[2025-06-26T18:34:37.686+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO Executor: Finished task 0.0 in stage 2.0 (TID 150). 2545 bytes result sent to driver
+[2025-06-26T18:34:37.688+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 150) in 1720 ms on localhost (executor driver) (1/1)
+[2025-06-26T18:34:37.688+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool
+[2025-06-26T18:34:37.689+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO DAGScheduler: ResultStage 2 (csv at NativeMethodAccessorImpl.java:0) finished in 1.760 s
+[2025-06-26T18:34:37.689+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+[2025-06-26T18:34:37.689+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+[2025-06-26T18:34:37.690+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO DAGScheduler: Job 2 finished: csv at NativeMethodAccessorImpl.java:0, took 1.770853 s
+[2025-06-26T18:34:37.692+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileFormatWriter: Start to commit write Job 0c7c1606-1853-40df-9456-19fc3cd57845.
+[2025-06-26T18:34:37.719+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileFormatWriter: Write Job 0c7c1606-1853-40df-9456-19fc3cd57845 committed. Elapsed time: 25 ms.
+[2025-06-26T18:34:37.723+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO FileFormatWriter: Finished processing stats for write job 0c7c1606-1853-40df-9456-19fc3cd57845.
+[2025-06-26T18:34:37.728+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO SparkContext: SparkContext is stopping with exitCode 0.
+[2025-06-26T18:34:37.747+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO SparkUI: Stopped Spark web UI at http://localhost:4040
+[2025-06-26T18:34:37.774+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2025-06-26T18:34:37.792+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO MemoryStore: MemoryStore cleared
+[2025-06-26T18:34:37.792+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO BlockManager: BlockManager stopped
+[2025-06-26T18:34:37.797+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2025-06-26T18:34:37.800+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2025-06-26T18:34:37.810+0700] {subprocess.py:93} INFO - 25/06/26 18:34:37 INFO SparkContext: Successfully stopped SparkContext
+[2025-06-26T18:34:38.010+0700] {subprocess.py:93} INFO - 25/06/26 18:34:38 INFO ShutdownHookManager: Shutdown hook called
+[2025-06-26T18:34:38.011+0700] {subprocess.py:93} INFO - 25/06/26 18:34:38 INFO ShutdownHookManager: Deleting directory /tmp/spark-e83b7c82-0a16-4086-83e3-c395c7b6caed
+[2025-06-26T18:34:38.016+0700] {subprocess.py:93} INFO - 25/06/26 18:34:38 INFO ShutdownHookManager: Deleting directory /tmp/spark-e83b7c82-0a16-4086-83e3-c395c7b6caed/pyspark-f9d1f3a6-282a-4cda-9161-65fff3e8697b
+[2025-06-26T18:34:38.019+0700] {subprocess.py:93} INFO - 25/06/26 18:34:38 INFO ShutdownHookManager: Deleting directory /tmp/spark-495eb8ad-547a-4bce-a769-39197272db61
+[2025-06-26T18:34:48.425+0700] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-06-26T18:34:48.426+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-26T18:34:48.466+0700] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=send_data_to_powerbi, task_id=compact_csv_to_one_file, execution_date=20250626T113401, start_date=20250626T113424, end_date=20250626T113448
+[2025-06-26T18:34:48.526+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-26T18:34:48.542+0700] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-06-26T18:34:48.553+0700] {local_task_job_runner.py:222} INFO - ::endgroup::

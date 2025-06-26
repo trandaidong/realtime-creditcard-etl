@@ -1,0 +1,35 @@
+[2025-06-26T18:42:57.454+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-26T18:42:57.472+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: send_data_to_powerbi.send_to_power_bi scheduled__2025-06-26T11:20:00+00:00 [queued]>
+[2025-06-26T18:42:57.478+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: send_data_to_powerbi.send_to_power_bi scheduled__2025-06-26T11:20:00+00:00 [queued]>
+[2025-06-26T18:42:57.478+0700] {taskinstance.py:2303} INFO - Starting attempt 3 of 3
+[2025-06-26T18:42:57.494+0700] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): send_to_power_bi> on 2025-06-26 11:20:00+00:00
+[2025-06-26T18:42:57.502+0700] {standard_task_runner.py:63} INFO - Started process 21998 to run task
+[2025-06-26T18:42:57.507+0700] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'send_data_to_powerbi', 'send_to_power_bi', 'scheduled__2025-06-26T11:20:00+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/load_power_bi.py', '--cfg-path', '/tmp/tmphx5t1jk8']
+[2025-06-26T18:42:57.508+0700] {standard_task_runner.py:91} INFO - Job 55: Subtask send_to_power_bi
+[2025-06-26T18:42:57.555+0700] {task_command.py:426} INFO - Running <TaskInstance: send_data_to_powerbi.send_to_power_bi scheduled__2025-06-26T11:20:00+00:00 [running]> on host Panda
+[2025-06-26T18:42:57.619+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='group_03' AIRFLOW_CTX_DAG_ID='send_data_to_powerbi' AIRFLOW_CTX_TASK_ID='send_to_power_bi' AIRFLOW_CTX_EXECUTION_DATE='2025-06-26T11:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-26T11:20:00+00:00'
+[2025-06-26T18:42:57.620+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-26T18:42:57.625+0700] {client.py:1116} INFO - Listing '/transactions_by_hour_compacted/'.
+[2025-06-26T18:42:57.640+0700] {client.py:724} INFO - Reading file '/transactions_by_hour_compacted/part-00000-e7a280b9-84b6-4c35-8759-7d6dd9a9c1b6-c000.csv'.
+[2025-06-26T18:42:57.681+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-26T18:42:57.682+0700] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/panda/Documents/ODAP/Project/airflow/dags/load_power_bi.py", line 70, in send_new_data
+    if pd.to_datetime(row["event_time"], utc=True) > last_push_time:
+  File "pandas/_libs/tslibs/timestamps.pyx", line 387, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+TypeError: Cannot compare tz-naive and tz-aware timestamps
+[2025-06-26T18:42:57.687+0700] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=send_data_to_powerbi, task_id=send_to_power_bi, execution_date=20250626T112000, start_date=20250626T114257, end_date=20250626T114257
+[2025-06-26T18:42:57.700+0700] {standard_task_runner.py:110} ERROR - Failed to execute job 55 for task send_to_power_bi (Cannot compare tz-naive and tz-aware timestamps; 21998)
+[2025-06-26T18:42:57.719+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-06-26T18:42:57.735+0700] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-26T18:42:57.736+0700] {local_task_job_runner.py:222} INFO - ::endgroup::

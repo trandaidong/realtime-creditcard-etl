@@ -1,0 +1,22 @@
+[2025-06-22T16:13:47.564+0700] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-22T16:13:47.584+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: start_kafka_hadoop_and_run_notebooks.start_yarn manual__2025-06-22T09:11:53.271575+00:00 [queued]>
+[2025-06-22T16:13:47.589+0700] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: start_kafka_hadoop_and_run_notebooks.start_yarn manual__2025-06-22T09:11:53.271575+00:00 [queued]>
+[2025-06-22T16:13:47.590+0700] {taskinstance.py:2303} INFO - Starting attempt 1 of 4
+[2025-06-22T16:13:47.604+0700] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): start_yarn> on 2025-06-22 09:11:53.271575+00:00
+[2025-06-22T16:13:47.609+0700] {standard_task_runner.py:63} INFO - Started process 10204 to run task
+[2025-06-22T16:13:47.614+0700] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'start_kafka_hadoop_and_run_notebooks', 'start_yarn', 'manual__2025-06-22T09:11:53.271575+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/start_DAG.py', '--cfg-path', '/tmp/tmpkno1w8qs']
+[2025-06-22T16:13:47.614+0700] {standard_task_runner.py:91} INFO - Job 30: Subtask start_yarn
+[2025-06-22T16:13:47.655+0700] {task_command.py:426} INFO - Running <TaskInstance: start_kafka_hadoop_and_run_notebooks.start_yarn manual__2025-06-22T09:11:53.271575+00:00 [running]> on host Panda
+[2025-06-22T16:13:47.739+0700] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='group_03' AIRFLOW_CTX_DAG_ID='start_kafka_hadoop_and_run_notebooks' AIRFLOW_CTX_TASK_ID='start_yarn' AIRFLOW_CTX_EXECUTION_DATE='2025-06-22T09:11:53.271575+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-22T09:11:53.271575+00:00'
+[2025-06-22T16:13:47.740+0700] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-22T16:13:47.741+0700] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-06-22T16:13:47.742+0700] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "'start-yarn.sh'"]
+[2025-06-22T16:13:47.755+0700] {subprocess.py:86} INFO - Output:
+[2025-06-22T16:13:48.617+0700] {subprocess.py:93} INFO - Starting resourcemanager
+[2025-06-22T16:13:50.740+0700] {subprocess.py:93} INFO - Starting nodemanagers
+[2025-06-22T16:13:54.052+0700] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-06-22T16:13:54.053+0700] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-22T16:13:54.072+0700] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=start_kafka_hadoop_and_run_notebooks, task_id=start_yarn, execution_date=20250622T091153, start_date=20250622T091347, end_date=20250622T091354
+[2025-06-22T16:13:54.128+0700] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-22T16:13:54.139+0700] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-22T16:13:54.140+0700] {local_task_job_runner.py:222} INFO - ::endgroup::

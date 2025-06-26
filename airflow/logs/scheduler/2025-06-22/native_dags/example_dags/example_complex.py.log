@@ -1,0 +1,760 @@
+[2025-06-22T13:04:18.262+0700] {processor.py:161} INFO - Started process (PID=15185) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:04:18.262+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T13:04:18.263+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:04:18.263+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:04:18.268+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:04:18.327+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:04:18.327+0700] {override.py:1829} INFO - Created Permission View: can edit on DAG:example_complex
+[2025-06-22T13:04:18.396+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:04:18.395+0700] {override.py:1829} INFO - Created Permission View: can delete on DAG:example_complex
+[2025-06-22T13:04:18.401+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:04:18.401+0700] {override.py:1829} INFO - Created Permission View: can read on DAG:example_complex
+[2025-06-22T13:04:18.402+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:04:18.402+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T13:04:18.406+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:04:18.406+0700] {dag.py:3118} INFO - Creating ORM DAG for example_complex
+[2025-06-22T13:04:18.406+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:04:18.406+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T13:04:18.417+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.159 seconds
+[2025-06-22T13:05:20.004+0700] {processor.py:161} INFO - Started process (PID=15560) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:05:20.009+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T13:05:20.010+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:05:20.010+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:05:20.014+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:05:20.026+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:05:20.026+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T13:05:20.080+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:05:20.080+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T13:05:20.100+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.098 seconds
+[2025-06-22T13:06:19.304+0700] {processor.py:161} INFO - Started process (PID=15719) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:06:19.308+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T13:06:19.309+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:06:19.309+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:06:19.315+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:06:19.329+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:06:19.329+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T13:06:19.335+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:06:19.335+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T13:06:19.349+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.049 seconds
+[2025-06-22T13:07:17.214+0700] {processor.py:161} INFO - Started process (PID=15869) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:07:17.218+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T13:07:17.218+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:07:17.218+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:07:17.224+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:07:17.236+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:07:17.236+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T13:07:17.242+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:07:17.241+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T13:07:17.255+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.045 seconds
+[2025-06-22T13:08:13.662+0700] {processor.py:161} INFO - Started process (PID=16025) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:08:13.667+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T13:08:13.668+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:08:13.667+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:08:13.675+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T13:08:13.686+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:08:13.686+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T13:08:13.691+0700] {logging_mixin.py:188} INFO - [2025-06-22T13:08:13.691+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T13:08:13.703+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.043 seconds
+[2025-06-22T14:35:50.590+0700] {processor.py:161} INFO - Started process (PID=22389) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:35:50.593+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:35:50.594+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:35:50.594+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:35:50.607+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:35:50.635+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:35:50.635+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:35:50.649+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:35:50.649+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:35:50.676+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.094 seconds
+[2025-06-22T14:36:59.253+0700] {processor.py:161} INFO - Started process (PID=22735) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:36:59.259+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:36:59.261+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:36:59.261+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:36:59.273+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:36:59.297+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:36:59.297+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:36:59.373+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:36:59.373+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:36:59.394+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.147 seconds
+[2025-06-22T14:38:11.411+0700] {processor.py:161} INFO - Started process (PID=23048) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:38:11.414+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:38:11.416+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:38:11.415+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:38:11.429+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:38:11.460+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:38:11.460+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:38:11.470+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:38:11.470+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:38:11.497+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.093 seconds
+[2025-06-22T14:39:16.802+0700] {processor.py:161} INFO - Started process (PID=23416) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:39:16.807+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:39:16.809+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:39:16.809+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:39:16.822+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:39:16.848+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:39:16.848+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:39:16.857+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:39:16.857+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:39:16.879+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.084 seconds
+[2025-06-22T14:40:20.783+0700] {processor.py:161} INFO - Started process (PID=23597) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:40:20.788+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:40:20.790+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:40:20.789+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:40:20.801+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:40:20.825+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:40:20.824+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:40:20.833+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:40:20.833+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:40:20.855+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.079 seconds
+[2025-06-22T14:41:33.114+0700] {processor.py:161} INFO - Started process (PID=24049) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:41:33.119+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:41:33.121+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:41:33.121+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:41:33.134+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:41:33.166+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:41:33.166+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:41:33.177+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:41:33.176+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:41:33.214+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.107 seconds
+[2025-06-22T14:42:45.941+0700] {processor.py:161} INFO - Started process (PID=24663) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:42:45.945+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:42:45.947+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:42:45.947+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:42:45.960+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:42:45.985+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:42:45.984+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:42:45.995+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:42:45.995+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:42:46.022+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.089 seconds
+[2025-06-22T14:43:58.755+0700] {processor.py:161} INFO - Started process (PID=25304) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:43:58.759+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:43:58.760+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:43:58.760+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:43:58.769+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:43:58.793+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:43:58.793+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:43:58.803+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:43:58.803+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:43:58.833+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.083 seconds
+[2025-06-22T14:45:15.916+0700] {processor.py:161} INFO - Started process (PID=26031) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:45:15.925+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:45:15.927+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:45:15.927+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:45:15.939+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:45:15.964+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:45:15.964+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:45:15.975+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:45:15.974+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:45:15.998+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.087 seconds
+[2025-06-22T14:46:24.469+0700] {processor.py:161} INFO - Started process (PID=26616) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:46:24.474+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:46:24.476+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:46:24.475+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:46:24.489+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:46:24.512+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:46:24.512+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:46:24.522+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:46:24.522+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:46:24.558+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.097 seconds
+[2025-06-22T14:47:34.148+0700] {processor.py:161} INFO - Started process (PID=26808) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:47:34.153+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:47:34.155+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:47:34.155+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:47:34.166+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:47:34.190+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:47:34.190+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:47:34.198+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:47:34.198+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:47:34.218+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.076 seconds
+[2025-06-22T14:48:45.972+0700] {processor.py:161} INFO - Started process (PID=27361) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:48:45.977+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:48:45.978+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:48:45.978+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:48:45.992+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:48:46.017+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:48:46.016+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:48:46.027+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:48:46.026+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:48:46.069+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.106 seconds
+[2025-06-22T14:49:58.675+0700] {processor.py:161} INFO - Started process (PID=27987) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:49:58.680+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:49:58.681+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:49:58.681+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:49:58.694+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:49:58.718+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:49:58.718+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:49:58.727+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:49:58.727+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:49:58.749+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.080 seconds
+[2025-06-22T14:51:07.691+0700] {processor.py:161} INFO - Started process (PID=28280) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:51:07.696+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:51:07.697+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:51:07.697+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:51:07.710+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:51:07.736+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:51:07.736+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:51:07.749+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:51:07.749+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:51:07.781+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.098 seconds
+[2025-06-22T14:52:23.526+0700] {processor.py:161} INFO - Started process (PID=28545) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:52:23.531+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:52:23.534+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:52:23.533+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:52:23.546+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:52:23.572+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:52:23.572+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:52:23.582+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:52:23.582+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:52:23.635+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.116 seconds
+[2025-06-22T14:53:33.556+0700] {processor.py:161} INFO - Started process (PID=28826) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:53:33.561+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:53:33.563+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:53:33.563+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:53:33.575+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:53:33.600+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:53:33.600+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:53:33.609+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:53:33.609+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:53:33.635+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.086 seconds
+[2025-06-22T14:54:45.236+0700] {processor.py:161} INFO - Started process (PID=29129) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:54:45.242+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:54:45.243+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:54:45.243+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:54:45.256+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:54:45.281+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:54:45.281+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:54:45.290+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:54:45.290+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:54:45.315+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.086 seconds
+[2025-06-22T14:55:52.369+0700] {processor.py:161} INFO - Started process (PID=29430) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:55:52.374+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:55:52.376+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:55:52.376+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:55:52.388+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:55:52.411+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:55:52.411+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:55:52.420+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:55:52.420+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:55:52.439+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.077 seconds
+[2025-06-22T14:56:54.945+0700] {processor.py:161} INFO - Started process (PID=29680) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:56:54.950+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:56:54.952+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:56:54.952+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:56:54.964+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:56:54.989+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:56:54.989+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:56:54.999+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:56:54.999+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:56:55.020+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.082 seconds
+[2025-06-22T14:57:59.541+0700] {processor.py:161} INFO - Started process (PID=29841) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:57:59.546+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:57:59.547+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:57:59.547+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:57:59.560+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:57:59.591+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:57:59.591+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:57:59.601+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:57:59.601+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:57:59.621+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.088 seconds
+[2025-06-22T14:59:09.038+0700] {processor.py:161} INFO - Started process (PID=30012) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:59:09.041+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T14:59:09.043+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:59:09.042+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:59:09.056+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T14:59:09.080+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:59:09.080+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T14:59:09.091+0700] {logging_mixin.py:188} INFO - [2025-06-22T14:59:09.091+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T14:59:09.121+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.091 seconds
+[2025-06-22T15:00:20.730+0700] {processor.py:161} INFO - Started process (PID=30687) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:00:20.736+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:00:20.738+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:00:20.737+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:00:20.750+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:00:20.776+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:00:20.776+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:00:20.787+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:00:20.786+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:00:20.808+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.084 seconds
+[2025-06-22T15:01:28.874+0700] {processor.py:161} INFO - Started process (PID=31352) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:01:28.884+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:01:28.886+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:01:28.886+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:01:28.899+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:01:28.925+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:01:28.924+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:01:28.935+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:01:28.934+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:01:28.963+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.096 seconds
+[2025-06-22T15:02:25.408+0700] {processor.py:161} INFO - Started process (PID=31829) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:02:25.413+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:02:25.414+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:02:25.414+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:02:25.425+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:02:25.448+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:02:25.448+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:02:25.458+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:02:25.458+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:02:25.487+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.086 seconds
+[2025-06-22T15:03:34.203+0700] {processor.py:161} INFO - Started process (PID=32002) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:03:34.209+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:03:34.211+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:03:34.210+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:03:34.224+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:03:34.251+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:03:34.251+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:03:34.261+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:03:34.261+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:03:34.285+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.089 seconds
+[2025-06-22T15:04:44.531+0700] {processor.py:161} INFO - Started process (PID=32425) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:04:44.536+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:04:44.538+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:04:44.537+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:04:44.550+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:04:44.604+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:04:44.603+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:04:44.617+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:04:44.616+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:04:44.644+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.120 seconds
+[2025-06-22T15:05:58.379+0700] {processor.py:161} INFO - Started process (PID=32860) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:05:58.380+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:05:58.382+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:05:58.382+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:05:58.395+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:05:58.419+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:05:58.418+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:05:58.428+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:05:58.428+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:05:58.448+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.075 seconds
+[2025-06-22T15:07:11.419+0700] {processor.py:161} INFO - Started process (PID=33078) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:07:11.424+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:07:11.426+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:07:11.425+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:07:11.438+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:07:11.461+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:07:11.461+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:07:11.470+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:07:11.470+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:07:11.494+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.083 seconds
+[2025-06-22T15:08:22.617+0700] {processor.py:161} INFO - Started process (PID=33261) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:08:22.622+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:08:22.623+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:08:22.623+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:08:22.635+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:08:22.660+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:08:22.660+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:08:22.669+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:08:22.669+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:08:22.688+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.078 seconds
+[2025-06-22T15:09:36.839+0700] {processor.py:161} INFO - Started process (PID=33477) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:09:36.843+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:09:36.846+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:09:36.845+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:09:36.858+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:09:36.882+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:09:36.881+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:09:36.892+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:09:36.891+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:09:36.917+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.085 seconds
+[2025-06-22T15:10:49.508+0700] {processor.py:161} INFO - Started process (PID=33880) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:10:49.509+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:10:49.511+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:10:49.510+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:10:49.522+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:10:49.553+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:10:49.552+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:10:49.585+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:10:49.584+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:10:49.635+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.134 seconds
+[2025-06-22T15:12:03.670+0700] {processor.py:161} INFO - Started process (PID=34231) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:12:03.675+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:12:03.677+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:12:03.676+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:12:03.689+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:12:03.721+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:12:03.721+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:12:03.735+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:12:03.734+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:12:03.768+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.106 seconds
+[2025-06-22T15:13:49.275+0700] {processor.py:161} INFO - Started process (PID=34830) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:13:49.280+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:13:49.281+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:13:49.281+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:13:49.295+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:13:49.325+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:13:49.324+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:13:49.337+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:13:49.337+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:13:49.366+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.099 seconds
+[2025-06-22T15:15:09.627+0700] {processor.py:161} INFO - Started process (PID=35294) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:15:09.632+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:15:09.634+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:15:09.633+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:15:09.648+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:15:09.681+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:15:09.680+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:15:09.807+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:15:09.807+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:15:09.838+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.219 seconds
+[2025-06-22T15:16:11.796+0700] {processor.py:161} INFO - Started process (PID=35653) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:16:11.799+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:16:11.800+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:16:11.800+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:16:11.813+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:16:11.844+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:16:11.844+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:16:11.856+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:16:11.856+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:16:11.884+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.095 seconds
+[2025-06-22T15:18:28.372+0700] {processor.py:161} INFO - Started process (PID=36486) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:18:28.377+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:18:28.379+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:18:28.379+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:18:28.392+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:18:28.424+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:18:28.423+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:18:28.438+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:18:28.438+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:18:28.472+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.107 seconds
+[2025-06-22T15:19:40.452+0700] {processor.py:161} INFO - Started process (PID=36818) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:19:40.457+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:19:40.459+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:19:40.459+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:19:40.473+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:19:40.626+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:19:40.626+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:19:40.640+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:19:40.639+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:19:40.672+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.229 seconds
+[2025-06-22T15:21:13.145+0700] {processor.py:161} INFO - Started process (PID=38936) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:21:13.151+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:21:13.153+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:21:13.152+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:21:13.167+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:21:13.196+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:21:13.196+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:21:13.207+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:21:13.207+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:21:13.231+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.094 seconds
+[2025-06-22T15:22:15.843+0700] {processor.py:161} INFO - Started process (PID=39909) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:22:15.846+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:22:15.847+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:22:15.847+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:22:15.860+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:22:15.891+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:22:15.891+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:22:15.904+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:22:15.904+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:22:15.933+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.099 seconds
+[2025-06-22T15:23:37.473+0700] {processor.py:161} INFO - Started process (PID=42617) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:23:37.479+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:23:37.481+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:23:37.480+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:23:37.496+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:23:37.527+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:23:37.527+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:23:37.539+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:23:37.539+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:23:37.561+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.095 seconds
+[2025-06-22T15:24:58.857+0700] {processor.py:161} INFO - Started process (PID=43562) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:24:58.860+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:24:58.862+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:24:58.862+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:24:58.875+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:24:58.906+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:24:58.906+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:24:58.916+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:24:58.916+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:24:58.946+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.096 seconds
+[2025-06-22T15:25:53.625+0700] {processor.py:161} INFO - Started process (PID=43696) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:25:53.630+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:25:53.632+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:25:53.632+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:25:53.646+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:25:53.677+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:25:53.677+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:25:53.691+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:25:53.691+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:25:53.723+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.106 seconds
+[2025-06-22T15:27:05.000+0700] {processor.py:161} INFO - Started process (PID=43865) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:27:05.005+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:27:05.007+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:27:05.007+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:27:05.021+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:27:05.053+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:27:05.052+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:27:05.064+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:27:05.063+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:27:05.091+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.099 seconds
+[2025-06-22T15:28:13.273+0700] {processor.py:161} INFO - Started process (PID=44050) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:28:13.279+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:28:13.281+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:28:13.280+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:28:13.294+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:28:13.326+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:28:13.325+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:28:13.339+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:28:13.339+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:28:13.382+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.116 seconds
+[2025-06-22T15:29:24.142+0700] {processor.py:161} INFO - Started process (PID=44225) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:29:24.147+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:29:24.149+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:29:24.148+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:29:24.161+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:29:24.191+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:29:24.191+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:29:24.202+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:29:24.202+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:29:24.237+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.102 seconds
+[2025-06-22T15:30:40.678+0700] {processor.py:161} INFO - Started process (PID=44408) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:30:40.681+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:30:40.683+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:30:40.683+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:30:40.696+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:30:40.727+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:30:40.727+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:30:40.741+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:30:40.740+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:30:40.775+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.105 seconds
+[2025-06-22T15:31:54.628+0700] {processor.py:161} INFO - Started process (PID=44674) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:31:54.633+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:31:54.635+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:31:54.634+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:31:54.648+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:31:54.681+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:31:54.680+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:31:54.695+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:31:54.694+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:31:54.724+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.105 seconds
+[2025-06-22T15:33:09.013+0700] {processor.py:161} INFO - Started process (PID=44899) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:33:09.018+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:33:09.020+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:33:09.020+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:33:09.035+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:33:09.065+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:33:09.065+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:33:09.078+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:33:09.077+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:33:09.103+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.096 seconds
+[2025-06-22T15:34:21.536+0700] {processor.py:161} INFO - Started process (PID=45079) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:34:21.542+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:34:21.545+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:34:21.544+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:34:21.559+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:34:21.590+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:34:21.589+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:34:21.602+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:34:21.602+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:34:21.634+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.105 seconds
+[2025-06-22T15:35:35.258+0700] {processor.py:161} INFO - Started process (PID=45252) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:35:35.263+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:35:35.266+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:35:35.265+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:35:35.280+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:35:35.310+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:35:35.310+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:35:35.323+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:35:35.322+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:35:35.349+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.099 seconds
+[2025-06-22T15:36:45.100+0700] {processor.py:161} INFO - Started process (PID=45418) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:36:45.105+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:36:45.107+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:36:45.106+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:36:45.119+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:36:45.149+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:36:45.149+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:36:45.160+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:36:45.160+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:36:45.184+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.093 seconds
+[2025-06-22T15:37:56.156+0700] {processor.py:161} INFO - Started process (PID=45646) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:37:56.161+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:37:56.163+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:37:56.163+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:37:56.178+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:37:56.208+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:37:56.208+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:37:56.221+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:37:56.221+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:37:56.256+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.108 seconds
+[2025-06-22T15:39:11.021+0700] {processor.py:161} INFO - Started process (PID=45826) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:39:11.026+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:39:11.028+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:39:11.027+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:39:11.041+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:39:11.072+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:39:11.072+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:39:11.086+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:39:11.086+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:39:11.111+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.097 seconds
+[2025-06-22T15:40:20.075+0700] {processor.py:161} INFO - Started process (PID=45996) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:40:20.081+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:40:20.083+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:40:20.083+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:40:20.096+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:40:20.128+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:40:20.127+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:40:20.140+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:40:20.140+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:40:20.170+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.101 seconds
+[2025-06-22T15:41:34.691+0700] {processor.py:161} INFO - Started process (PID=46242) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:41:34.696+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:41:34.698+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:41:34.698+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:41:34.711+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:41:34.737+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:41:34.737+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:41:34.747+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:41:34.747+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:41:34.773+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.090 seconds
+[2025-06-22T15:42:56.545+0700] {processor.py:161} INFO - Started process (PID=46635) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:42:56.551+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:42:56.553+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:42:56.553+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:42:56.567+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:42:56.600+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:42:56.600+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:42:56.612+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:42:56.612+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:42:56.634+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.095 seconds
+[2025-06-22T15:43:52.045+0700] {processor.py:161} INFO - Started process (PID=46865) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:43:52.050+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:43:52.052+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:43:52.052+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:43:52.065+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:43:52.095+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:43:52.095+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:43:52.107+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:43:52.107+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:43:52.127+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.089 seconds
+[2025-06-22T15:45:08.559+0700] {processor.py:161} INFO - Started process (PID=47155) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:45:08.564+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:45:08.565+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:45:08.565+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:45:08.580+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:45:08.619+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:45:08.618+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:45:08.633+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:45:08.633+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:45:08.656+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.106 seconds
+[2025-06-22T15:51:01.773+0700] {processor.py:161} INFO - Started process (PID=54211) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:51:01.776+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:51:01.777+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:51:01.776+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:51:01.790+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:51:01.821+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:51:01.821+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:51:01.833+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:51:01.833+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:51:01.858+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.093 seconds
+[2025-06-22T15:52:21.865+0700] {processor.py:161} INFO - Started process (PID=55436) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:52:21.870+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:52:21.871+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:52:21.871+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:52:21.886+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:52:21.927+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:52:21.927+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:52:21.942+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:52:21.942+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:52:21.971+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.114 seconds
+[2025-06-22T15:53:20.326+0700] {processor.py:161} INFO - Started process (PID=55657) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:53:20.331+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:53:20.333+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:53:20.332+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:53:20.345+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:53:20.374+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:53:20.374+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:53:20.386+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:53:20.385+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:53:20.410+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.091 seconds
+[2025-06-22T15:54:23.874+0700] {processor.py:161} INFO - Started process (PID=56348) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:54:23.880+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:54:23.881+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:54:23.881+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:54:23.894+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:54:23.924+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:54:23.923+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:54:23.935+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:54:23.935+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:54:23.959+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.092 seconds
+[2025-06-22T15:55:20.596+0700] {processor.py:161} INFO - Started process (PID=56495) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:55:20.601+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:55:20.602+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:55:20.601+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:55:20.615+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:55:20.645+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:55:20.644+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:55:20.656+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:55:20.656+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:55:20.689+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.100 seconds
+[2025-06-22T15:56:42.467+0700] {processor.py:161} INFO - Started process (PID=57255) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:56:42.472+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:56:42.473+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:56:42.473+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:56:42.485+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:56:42.514+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:56:42.514+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:56:42.526+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:56:42.526+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:56:42.552+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.093 seconds
+[2025-06-22T15:57:50.353+0700] {processor.py:161} INFO - Started process (PID=57418) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:57:50.358+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:57:50.360+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:57:50.359+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:57:50.373+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:57:50.403+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:57:50.402+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:57:50.414+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:57:50.413+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:57:50.441+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.095 seconds
+[2025-06-22T15:58:59.100+0700] {processor.py:161} INFO - Started process (PID=57587) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:58:59.105+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T15:58:59.106+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:58:59.105+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:58:59.117+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T15:58:59.148+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:58:59.147+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T15:58:59.159+0700] {logging_mixin.py:188} INFO - [2025-06-22T15:58:59.159+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T15:58:59.187+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.095 seconds
+[2025-06-22T16:00:09.927+0700] {processor.py:161} INFO - Started process (PID=57756) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:00:09.931+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:00:09.933+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:00:09.932+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:00:09.945+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:00:09.974+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:00:09.973+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:00:09.985+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:00:09.985+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:00:10.009+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.089 seconds
+[2025-06-22T16:01:20.251+0700] {processor.py:161} INFO - Started process (PID=57986) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:01:20.254+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:01:20.255+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:01:20.255+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:01:20.269+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:01:20.299+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:01:20.299+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:01:20.311+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:01:20.311+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:01:20.336+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.093 seconds
+[2025-06-22T16:02:30.944+0700] {processor.py:161} INFO - Started process (PID=58184) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:02:30.949+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:02:30.951+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:02:30.950+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:02:30.962+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:02:30.992+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:02:30.991+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:02:31.004+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:02:31.004+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:02:31.028+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.092 seconds
+[2025-06-22T16:03:33.697+0700] {processor.py:161} INFO - Started process (PID=58347) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:03:33.702+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:03:33.704+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:03:33.703+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:03:33.717+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:03:33.748+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:03:33.748+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:03:33.760+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:03:33.760+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:03:33.786+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.097 seconds
+[2025-06-22T16:07:53.601+0700] {processor.py:161} INFO - Started process (PID=5366) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:07:53.606+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:07:53.608+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:07:53.608+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:07:53.622+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:07:53.655+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:07:53.655+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:07:53.669+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:07:53.669+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:07:53.697+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.103 seconds
+[2025-06-22T16:09:09.971+0700] {processor.py:161} INFO - Started process (PID=5783) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:09:09.977+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:09:09.979+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:09:09.978+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:09:09.992+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:09:10.162+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:09:10.161+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:09:10.176+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:09:10.175+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:09:10.209+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.245 seconds
+[2025-06-22T16:10:05.910+0700] {processor.py:161} INFO - Started process (PID=5917) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:10:05.915+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:10:05.917+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:10:05.917+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:10:05.931+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:10:05.962+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:10:05.962+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:10:05.976+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:10:05.976+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:10:06.009+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.106 seconds
+[2025-06-22T16:14:46.894+0700] {processor.py:161} INFO - Started process (PID=11103) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:14:46.897+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:14:46.899+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:14:46.898+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:14:46.911+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:14:46.942+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:14:46.942+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:14:46.955+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:14:46.954+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:14:46.987+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.101 seconds
+[2025-06-22T16:15:40.852+0700] {processor.py:161} INFO - Started process (PID=11252) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:15:40.857+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:15:40.859+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:15:40.858+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:15:40.871+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:15:40.900+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:15:40.900+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:15:40.911+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:15:40.911+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:15:40.931+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.086 seconds
+[2025-06-22T16:16:57.932+0700] {processor.py:161} INFO - Started process (PID=12482) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:16:57.937+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:16:57.939+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:16:57.938+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:16:57.951+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:16:57.980+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:16:57.979+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:16:57.991+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:16:57.991+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:16:58.013+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.089 seconds
+[2025-06-22T16:18:09.967+0700] {processor.py:161} INFO - Started process (PID=12761) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:18:09.973+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:18:09.974+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:18:09.974+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:18:09.988+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:18:10.019+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:18:10.019+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:18:10.031+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:18:10.031+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:18:10.055+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.096 seconds
+[2025-06-22T16:19:23.650+0700] {processor.py:161} INFO - Started process (PID=13014) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:19:23.653+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:19:23.654+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:19:23.654+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:19:23.668+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:19:23.697+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:19:23.697+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:19:23.709+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:19:23.708+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:19:23.733+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.091 seconds
+[2025-06-22T16:20:28.712+0700] {processor.py:161} INFO - Started process (PID=13647) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:20:28.716+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:20:28.717+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:20:28.717+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:20:28.730+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:20:28.759+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:20:28.758+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:20:28.771+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:20:28.770+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:20:28.796+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.091 seconds
+[2025-06-22T16:21:36.385+0700] {processor.py:161} INFO - Started process (PID=13854) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:21:36.388+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:21:36.389+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:21:36.388+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:21:36.402+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:21:36.432+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:21:36.431+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:21:36.444+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:21:36.444+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:21:36.476+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.098 seconds
+[2025-06-22T16:22:48.736+0700] {processor.py:161} INFO - Started process (PID=14027) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:22:48.741+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:22:48.742+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:22:48.741+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:22:48.753+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:22:48.782+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:22:48.781+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:22:48.793+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:22:48.793+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:22:48.814+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.085 seconds
+[2025-06-22T16:23:57.353+0700] {processor.py:161} INFO - Started process (PID=14185) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:23:57.358+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:23:57.359+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:23:57.359+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:23:57.372+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:23:57.404+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:23:57.403+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:23:57.421+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:23:57.421+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:23:57.454+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.109 seconds
+[2025-06-22T16:25:05.983+0700] {processor.py:161} INFO - Started process (PID=14356) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:25:05.988+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:25:05.989+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:25:05.989+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:25:06.002+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:25:06.033+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:25:06.032+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:25:06.045+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:25:06.044+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:25:06.073+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.098 seconds
+[2025-06-22T16:33:56.947+0700] {processor.py:161} INFO - Started process (PID=15685) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:33:56.952+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:33:56.953+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:33:56.953+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:33:56.965+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:33:56.994+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:33:56.994+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:33:57.006+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:33:57.006+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:33:57.040+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.099 seconds
+[2025-06-22T16:35:07.204+0700] {processor.py:161} INFO - Started process (PID=15867) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:35:07.209+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:35:07.210+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:35:07.210+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:35:07.223+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:35:07.253+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:35:07.253+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:35:07.264+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:35:07.264+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:35:07.285+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.088 seconds
+[2025-06-22T16:36:17.361+0700] {processor.py:161} INFO - Started process (PID=16029) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:36:17.366+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:36:17.367+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:36:17.366+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:36:17.379+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:36:17.409+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:36:17.409+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:36:17.423+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:36:17.423+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:36:17.454+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.100 seconds
+[2025-06-22T16:37:28.130+0700] {processor.py:161} INFO - Started process (PID=16199) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:37:28.136+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:37:28.137+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:37:28.136+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:37:28.150+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:37:28.201+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:37:28.200+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:37:28.222+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:37:28.222+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:37:28.257+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.133 seconds
+[2025-06-22T16:38:35.410+0700] {processor.py:161} INFO - Started process (PID=16384) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:38:35.415+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T16:38:35.416+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:38:35.416+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:38:35.429+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T16:38:35.459+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:38:35.459+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T16:38:35.471+0700] {logging_mixin.py:188} INFO - [2025-06-22T16:38:35.471+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T16:38:35.496+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.094 seconds
+[2025-06-22T22:46:58.352+0700] {processor.py:161} INFO - Started process (PID=16970) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:46:58.354+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T22:46:58.356+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:46:58.355+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:46:58.369+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:46:58.400+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:46:58.400+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T22:46:58.413+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:46:58.412+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T22:46:58.438+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.094 seconds
+[2025-06-22T22:47:57.222+0700] {processor.py:161} INFO - Started process (PID=17727) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:47:57.230+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T22:47:57.232+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:47:57.231+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:47:57.245+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:47:57.278+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:47:57.277+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T22:47:57.292+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:47:57.291+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T22:47:57.322+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.111 seconds
+[2025-06-22T22:49:07.162+0700] {processor.py:161} INFO - Started process (PID=18245) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:49:07.167+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T22:49:07.168+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:49:07.168+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:49:07.181+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:49:07.214+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:49:07.214+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T22:49:07.228+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:49:07.227+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T22:49:07.259+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.105 seconds
+[2025-06-22T22:50:18.443+0700] {processor.py:161} INFO - Started process (PID=18488) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:50:18.448+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T22:50:18.450+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:50:18.449+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:50:18.462+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:50:18.491+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:50:18.491+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T22:50:18.504+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:50:18.503+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T22:50:18.535+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.098 seconds
+[2025-06-22T22:51:28.954+0700] {processor.py:161} INFO - Started process (PID=18655) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:51:28.959+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T22:51:28.960+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:51:28.959+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:51:28.973+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:51:29.003+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:51:29.003+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T22:51:29.013+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:51:29.013+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T22:51:29.039+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.093 seconds
+[2025-06-22T22:52:45.332+0700] {processor.py:161} INFO - Started process (PID=18889) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:52:45.338+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T22:52:45.339+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:52:45.338+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:52:45.352+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:52:45.383+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:52:45.382+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T22:52:45.393+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:52:45.393+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T22:52:45.420+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.096 seconds
+[2025-06-22T22:53:56.960+0700] {processor.py:161} INFO - Started process (PID=19072) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:53:56.965+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T22:53:56.966+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:53:56.965+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:53:56.979+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:53:57.008+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:53:57.007+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T22:53:57.017+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:53:57.017+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T22:53:57.037+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.084 seconds
+[2025-06-22T22:55:09.333+0700] {processor.py:161} INFO - Started process (PID=19247) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:55:09.336+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T22:55:09.337+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:55:09.337+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:55:09.351+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:55:09.382+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:55:09.382+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T22:55:09.391+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:55:09.391+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T22:55:09.413+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.087 seconds
+[2025-06-22T22:56:17.462+0700] {processor.py:161} INFO - Started process (PID=19428) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:56:17.467+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T22:56:17.468+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:56:17.468+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:56:17.480+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:56:17.513+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:56:17.512+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T22:56:17.525+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:56:17.525+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T22:56:17.551+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.096 seconds
+[2025-06-22T22:57:26.233+0700] {processor.py:161} INFO - Started process (PID=19591) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:57:26.238+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T22:57:26.240+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:57:26.239+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:57:26.253+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:57:26.284+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:57:26.284+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T22:57:26.296+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:57:26.296+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T22:57:26.323+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.097 seconds
+[2025-06-22T22:58:20.291+0700] {processor.py:161} INFO - Started process (PID=19722) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:58:20.296+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T22:58:20.297+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:58:20.296+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:58:20.309+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:58:20.338+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:58:20.338+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T22:58:20.348+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:58:20.348+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T22:58:20.368+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.086 seconds
+[2025-06-22T22:59:34.208+0700] {processor.py:161} INFO - Started process (PID=19928) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:59:34.213+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T22:59:34.214+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:59:34.214+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:59:34.227+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T22:59:34.253+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:59:34.253+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T22:59:34.263+0700] {logging_mixin.py:188} INFO - [2025-06-22T22:59:34.263+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T22:59:34.292+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.091 seconds
+[2025-06-22T23:00:51.042+0700] {processor.py:161} INFO - Started process (PID=20135) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T23:00:51.047+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T23:00:51.049+0700] {logging_mixin.py:188} INFO - [2025-06-22T23:00:51.048+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T23:00:51.061+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T23:00:51.091+0700] {logging_mixin.py:188} INFO - [2025-06-22T23:00:51.090+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T23:00:51.100+0700] {logging_mixin.py:188} INFO - [2025-06-22T23:00:51.100+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T23:00:51.124+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.089 seconds
+[2025-06-22T23:02:06.477+0700] {processor.py:161} INFO - Started process (PID=20318) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T23:02:06.482+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T23:02:06.483+0700] {logging_mixin.py:188} INFO - [2025-06-22T23:02:06.483+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T23:02:06.496+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T23:02:06.527+0700] {logging_mixin.py:188} INFO - [2025-06-22T23:02:06.527+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T23:02:06.536+0700] {logging_mixin.py:188} INFO - [2025-06-22T23:02:06.536+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T23:02:06.557+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.088 seconds
+[2025-06-22T23:03:14.695+0700] {processor.py:161} INFO - Started process (PID=20556) to work on /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T23:03:14.696+0700] {processor.py:830} INFO - Processing file /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-06-22T23:03:14.697+0700] {logging_mixin.py:188} INFO - [2025-06-22T23:03:14.697+0700] {dagbag.py:540} INFO - Filling up the DagBag from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T23:03:14.710+0700] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-06-22T23:03:14.743+0700] {logging_mixin.py:188} INFO - [2025-06-22T23:03:14.743+0700] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-22T23:03:14.755+0700] {logging_mixin.py:188} INFO - [2025-06-22T23:03:14.755+0700] {dag.py:3954} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-06-22T23:03:14.788+0700] {processor.py:183} INFO - Processing /home/panda/Documents/ODAP/Project/venv310/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.102 seconds
