@@ -1,42 +1,36 @@
-Đảm bảo đã cài đặt Kafka, Hadoop và Spark trên máy
------ Các yêu cầu cần thiết ------
-Bước đầu tiên cần tạo môi trường ảo để chạy
-Trong project mở cửa số terminal lên và chạy:
-    python3.10 -m venv venv310
-Kích hoạt môi truờng ảo cho Project
-    source venv310/bin/activate
-Tải các thư viện cần thiết liên quan
-    pip install -r requirements.txt
-Cấp quyền thực thi file 
-    chmod +x install_airflow.sh
-Chạy lệnh sau để cài được phiên bản airflow phù hợp, không bị xung đột
-    ./install_airflow.sh
-Khởi tạo cơ sở dữ liệu Airflow
-    export AIRFLOW_HOME=$(pwd)/airflow
-    airflow db init
--- Tạo user để đăng nhập web UI
-    airflow users create \
-        --username admin \
-        --firstname Admin \
-        --lastname User \
-        --role Admin \
-        --email admin@example.com \
-        --password admin
-Mở ternimal mới của thư mục Project
-    source venv310/bin/activate
-    export AIRFLOW_HOME=$(pwd)/airflow
-    airflow scheduler
-Mở ternimal mới của thư mục Project
-    source venv310/bin/activate
-    export AIRFLOW_HOME=$(pwd)/airflow
-    airflow webserver --port 8080
--> Lúc này có thể mở localhost:8080 để xem màn hình web của Airflow
---------------------------------------------
-ĐẢM BẢO ĐÃ KHỞI ĐỘNG SERVER KAFKA VÀ HADOOP
---------------------------------------------
-Quy trình chạy pipeline
-B1: Sinh data nếu chưa có -> Chạy thư mục Generate_data.py trong thư mục data để sinh ra file data.csv 
-B2: Chạy script producer.ipynb để thực hiện đưa dữ liệu vào topic 'transactions'
-B3: Chạy script comsumer_stream.ipynb để thực hiện chuẩn hóa dữ liệu và đưa vào hadoop
-B4: Mở localhost:8080 (mặc định của airflow) để chạy DAG send_data_to_powerbi
-B5: Truy cập đường link power bi trong thư mục powerbi
+# Real-Time Credit Card Transaction Processing System
+
+## 🧠 Project Overview
+
+This project simulates a **real-time data processing system** for a financial company that monitors **credit card transactions** from various POS terminals. The primary goal is to **detect frauds**, **transform and store valid transactions**, and **visualize insightful statistics** via Power BI.
+
+---
+
+## 🔧 Technologies Used
+
+- **Apache Kafka**: Real-time event streaming for simulating POS transactions.
+- **Apache Spark Structured Streaming**: Real-time data processing from Kafka.
+- **Hadoop HDFS**: Distributed storage for processed data.
+- **Power BI**: Data visualization and business intelligence.
+- **Apache Airflow**: Workflow scheduling for automating daily Power BI data refresh.
+
+---
+
+## 📌 Project Objectives
+
+- **Simulate real-time credit card transactions** (from CSV via Kafka).
+- **Filter and transform data**:
+  - Remove invalid/fraudulent transactions (`Is Fraud? = Yes`).
+  - Convert `Amount` to VND based on daily FX rates.
+  - Format time fields (`dd/mm/yyyy`, `hh:mm:ss`).
+- **Store valid transactions** in Hadoop.
+- **Daily aggregation and statistics** by:
+  - Merchant
+  - City
+  - Time (day, month, year)
+- **Visualize results** in Power BI and keep it updated daily via Airflow.
+
+---
+
+## 🗂️ Project Structure
+
