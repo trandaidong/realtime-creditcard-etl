@@ -34,6 +34,7 @@ This project simulates a **real-time data processing system** for a financial co
 ---
 
 ## 🗂️ Project Structure
+```text
 realtime-creditcard-etl/
 ├── airflow/                  # Airflow DAGs, configuration files, and logs
 │   └── dags/                 # DAG definitions for scheduling workflows
@@ -58,7 +59,7 @@ realtime-creditcard-etl/
 ├── .gitignore                # Git ignore rules for excluding unnecessary files
 ├── README.md                 # Project overview, setup instructions, and usage
 └── requirements.txt          # Python dependencies required for the project
-
+```
 
 
 ## 📈 Key Analyses Performed
