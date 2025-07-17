@@ -77,7 +77,8 @@ realtime-creditcard-etl/
 
 ---
 <img width="1834" height="983" alt="image" src="https://github.com/user-attachments/assets/4511f239-0efe-4fc6-9b33-e900a88ce296" />
-
+<img width="1792" height="961" alt="image" src="https://github.com/user-attachments/assets/a621e65e-d8e4-4c9a-b849-1ded5d06e935" />
+---
 
 ## 🚀 How to Run the Project
 
