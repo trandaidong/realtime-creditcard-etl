@@ -76,6 +76,8 @@ realtime-creditcard-etl/
 10. **Recommendations to optimize operations or reduce fraud.**
 
 ---
+<img width="1834" height="983" alt="image" src="https://github.com/user-attachments/assets/4511f239-0efe-4fc6-9b33-e900a88ce296" />
+
 
 ## 🚀 How to Run the Project
 
